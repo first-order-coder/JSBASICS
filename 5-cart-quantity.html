@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Cart-Quantitiy
+    </title>
+</head>
+
+<body>
+    <button class="clickme" onclick="//alert('You Pressed'); 
+        console.log(`Cart Quantity: ${cartQuantitiy}`);" style="background-color: yellow;">
+            Show Contents
+        </button>
+        
+        <button onclick="
+        cartQuantitiy += 1; 
+        console.log('Item Added');
+        console.log(`Cart Quantity: ${cartQuantitiy}`)" 
+        class="add_to_cart" style="background-color: orange;"> 
+        Add To Cart
+    </button>
+
+    <button style="font-size:14px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    background-color: red;" 
+    onclick="
+    cartQuantitiy += 2;
+    console.log('2 Items Added');
+    console.log(`Cart Quantity: ${cartQuantitiy}`)">
+        Add 2
+    </button>
+    
+    <button style="background-color: green;" onclick="
+    cartQuantitiy += 3;
+    console.log('3 Items Added');
+    console.log(`Cart Quantity: ${cartQuantitiy}`)">
+        Add 3
+    </button>
+    
+    <button style="background-color: greenyellow;" onclick="
+    cartQuantitiy = 0; 
+    console.log('Cart Cleared \n\nCart Is Empty');
+    console.log(`Cart Quantity: ${cartQuantitiy}`)
+    ">
+        Reset
+    </button>
+
+    <script>
+        let cartQuantitiy = 0;
+    </script>
+</body>

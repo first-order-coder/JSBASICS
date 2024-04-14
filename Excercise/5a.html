@@ -1,0 +1,90 @@
+<DOCTYPE html>
+    <head>
+        <title>
+            Variables Excercise
+        </title>
+    </head>
+
+    <body>
+        <p style="background-color: yellow; font-size: xx-large;">
+            CAFE CALC
+        </p> 
+        <br>
+
+        <p style="display: inline-block;">
+            COFFEE = 5$ 
+        </p>
+        
+        <button style="background-color:greenyellow; margin-left: 20px;"; 
+        onclick="
+        coffeeCount++;
+        totalItems++;
+        totalCost = totalCost + 5;
+        console.log('Coffee Bought')
+        ">
+            BUY
+        </button>
+        <br>
+
+        <p style="display: inline-block;">
+            BAGEL = 3$ 
+        </p>
+        
+        <button style="background-color:greenyellow; margin-left: 25px;";
+        onclick="
+        bagelCount++;
+        totalItems++;
+        totalCost = totalCost + 3;
+        console.log('Bagel Bought')
+        ">
+            BUY
+        </button>
+        <br>
+
+        <p style="display: inline-block;">
+            SOUP = 9$ 
+        </p>
+        
+        <button style="background-color:greenyellow; margin-left: 29px;" onclick="
+        soupCount++;
+        totalItems++;
+        totalCost = totalCost + 9;
+        console.log('Soup Bought')
+        ">
+            BUY
+        </button>
+        <br>
+
+        <button style="background-color:greenyellow; margin-top: 15px; margin-left: 0px;" onclick="
+        console.log(`Grand Total: $${totalCost}`)">
+            TOTAL
+        </button>
+
+        <button style="background-color:greenyellow; margin-top: 15px; margin-left: 0px;"onclick="
+        console.log(`Coffee: ${coffeeCount}`)
+        console.log(`Bagel:  ${bagelCount}`)
+        console.log(`Soup:   ${soupCount}`)
+        console.log(`Total Items: ${totalItems}`)
+        
+        ">
+            TOTAL ITEMS
+        </button>
+
+        <button style="background-color: greenyellow;"
+        onclick="
+        totalCost = 0;
+        totalItems = 0;">
+            RESET
+        </button>
+
+        <script>
+            const myName = 'Elon Musk';
+            let totalCost = 0;
+            let totalItems = 0;
+            let coffeeCount = 0;
+            let bagelCount = 0;
+            let soupCount = 0;
+
+        </script>
+    </body>
+</DOCTYPE>
