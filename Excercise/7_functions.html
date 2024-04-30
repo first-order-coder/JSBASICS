@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>7-Functions</title>
+    </head>
+    <body>
+        <button style="background-color: greenyellow;"; onclick="enterTemperature();">
+            Enter Temperature
+        </button>
+
+        <button style="background-color: yellow;"onclick="
+            convertToFahernheit(temperature_1)
+            "> 
+            Celscius to Faherneit 
+        </button>
+
+        <script>
+            let temperature_1 = ''; //defined here so this will be available to both the buttons
+
+            function enterTemperature(){
+                temperature_1 = prompt('Enter');
+            }
+
+            function greet(name){
+                if(!name){
+                    console.log('Hi there')
+                }else{
+                console.log(`Hello ${name}!`)
+                }
+            }
+
+            function convertToFahernheit(temperature){
+                console.log((temperature * 9/5) + 32)
+            }
+        
+        </script>
+    </body>
+</html>
