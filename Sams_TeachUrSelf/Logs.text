@@ -1,0 +1,8 @@
+Day_01
+>> To open the file using powershell type "ii filenmae.text"
+>> <a> </a> the 'a' stands for word anchor
+	>> <a> has a attribute href=""
+>> To make a button press to go to a link place it as <a href="link"> <button>GO TO</button> </a> 
+>> <a href="mailto:youremail@domain.com"> This will link to your mail address </a> 
+>> <hr> to create a horizontal line
+>> <h1> To create a Heading </h1>
