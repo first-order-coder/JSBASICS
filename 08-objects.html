@@ -5,27 +5,57 @@
     </head>
     <body>
         <script>
-            const product = {
-                name: 'Trousers',
-                price: 1090
+            // const product = {
+            //     name: 'Trousers',
+            //     price: 1090
+            // };
+            // console.log(product);
+
+            // //accessing the values separately
+            // console.log(product.name);
+            // console.log(product.price)
+
+            // //changing value of an already existing property
+            // product.price = 10222;
+            // console.log(product)
+
+            // //add a new property
+            // product.value = '0';
+            // console.log(product)
+
+            // //delete a property
+            // delete product.name;
+            // console.log(product)
+
+            // Storing the variable inside the localStorge
+            localStorage.setItem('Name', 'Jason')
+
+            // To get the variable out side
+            console.log(localStorage.getItem('Name'))            
+
+            const product2 = {
+                name: 'Shirt',
+                color: ' Blue',
+                nested_object: {
+                    nested_property: 'nested_value'
+                },
+                fun: function function_inside_object() {
+                    console.log('function inside an object');
+                }
             };
-            console.log(product);
+            console.log(product2['name']+product2['color'])
+            console.log(product2.nested_object.nested_property)
+            product2.fun();
 
-            //accessing the values separately
-            console.log(product.name);
-            console.log(product.price)
+            //store a javscript object inside localStorage
+            localStorage.setItem('product_2', JSON.stringify(product2)); //product2 is a javaScript object
 
-            //changing value of an already existing property
-            product.price = 10222;
-            console.log(product)
+            //get the stored javacript object 
+            console.log(localStorage.getItem('product_2')) //but this is not javscript object this is a JSON object
 
-            //add a new property
-            product.value = '0';
-            console.log(product)
+            //to get the javScript object as the output
+            console.log(JSON.parse(localStorage.getItem('product_2')));
 
-            //delete a property
-            delete product.name;
-            console.log(product)
 
         </script>
     </body>
