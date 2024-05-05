@@ -6,4 +6,10 @@ Day_01
 >> <a href="mailto:youremail@domain.com"> This will link to your mail address </a> 
 >> <hr> to create a horizontal line
 >> <h1> To create a Heading </h1>
-a
+>> To get a YT video on to the web page	
+	>>Share--> Embed --> copy the code and paste it
+	>> But if the owners of the video havent given the allow embedded video option then it cant be used
+>> This code will make sure that webpage will fit into all the devices without a problem	
+	<meta charset="UTF-8">
+     	<meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
