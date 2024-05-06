@@ -1,4 +1,5 @@
 Day_01
+
 >> To open the file using powershell type "ii filenmae.text"
 >> <a> </a> the 'a' stands for word anchor
 	>> <a> has a attribute href=""
@@ -13,3 +14,17 @@ Day_01
 	<meta charset="UTF-8">
      	<meta name="viewport"
               content="width=device-width, initial-scale=1.0">
+
+Day_02
+
+>>FrontEnd
+	>> React.js
+	>> Node.js
+	>> Tailwind css
+	>> daisyui
+
+>>Backend 
+	>> Next js API
+	>> MongoDB
+	>> Mailgun
+	>> Stripe
