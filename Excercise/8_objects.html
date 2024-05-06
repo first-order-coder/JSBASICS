@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        8-OBJECTS
+    </title>
+    <script src = 
+        "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js">
+    </script>
+</head>
+<body>
+    <script type="text/javascript">
+        const product_1 = {
+            name: 'Basketball',
+            price: 2095
+        }
+        const product_2 = {
+            name: 'Basketball',
+            price: 2095
+        }
+
+        product_1.price += 500;
+        //console.log(product_1);
+
+        product_1['delivery-time'] = '3 days'
+        //console.log(product_1);
+
+        function comparePrice(product1,product2){
+            if (product1.price >= product2.price) {
+                console.log(`${product2.name} is the less expensive one`)
+            } else{
+                console.log(`${product1.name} is the less expensive one`)
+            }
+        }
+        comparePrice(product_1, product_2);
+
+        function SameProduct(product1, product2) {
+            /*
+            if (product1.name === product2.name && product1.price === product2.price) {
+                console.log('both same')
+            } else {
+                console.log('They are not the same')
+            }
+            this wont work because objects are non-primitive types and they can only be compared by reference.
+            */ 
+           console.log(_.isEqual(product1, product2))
+           console.log(JSON.stringify(product1) === JSON.stringify(product2) )
+        }
+        SameProduct(product_1, product_2);
+    </script>
+</body>
