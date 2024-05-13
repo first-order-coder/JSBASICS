@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+    <title> Coin Flip </title>
+    <style>
+    .btn{
+        margin-left: 5px;
+        background-color: yellow; 
+        border-radius: 5px;
+        border-style:none;
+        font-size: xxx-large;
+    }
+    </style>
+</head>
+<body style="background-color:grey">
+    <button class="btn"; onclick=" 
+        finalDescison('HEADS')">
+        HEADS
+    </button>
+    <button class="btn"; onclick="
+        finalDescison('TAILS')">
+        TAILS
+    </button>
+    <br>
+    <button class="btn" style="margin-top: 15px;"
+        onclick="console.log(JSON.parse(localStorage.getItem('final_score')))">
+        RESULTS
+    </button>
+    <br>
+    <button class="btn"; style="margin-top:15px"; onclick="
+        score.Wins = 0;
+        score.Losses = 0;
+        localStorage.setItem('final_score',JSON.stringify(score))">
+        RESET
+    </button>
+    <script>
+        let yourMove = '';
+
+        let score = JSON.parse(localStorage.getItem(('score'))) ||{
+            Wins: 0,
+            Losses: 0,
+        }
+
+        function generatingComputerMove(){
+            let computer_move = '';
+            let generated_move = Math.random()
+            if (generated_move > 0.8) {
+                computer_move = 'Tails'
+                // console.log(computer_move)
+            }else if (0.5 < generated_move && generated_move <= 0.80){
+                computer_move = 'Heads'
+                // console.log(computer_move)
+            }else if (0.20 < generated_move && generated_move <= 0.50){
+                computer_move = 'Tails'
+                // console.log(computer_move)
+            }else if (generated_move <= 0.20){
+                computer_move = 'Heads'
+                // console.log(computer_move)
+            }
+            return computer_move;
+        }
+
+        function finalDescison(yourMove_1){
+            let computer_move = generatingComputerMove()
+
+            yourMove_1 = yourMove_1.toLowerCase();
+            computer_move = computer_move.toLowerCase();
+
+            console.log(yourMove_1)
+            console.log(computer_move)
+            if (computer_move === yourMove_1) {
+                console.log('You Win')
+                score.Wins += 1;
+            } else{
+                console.log('You Lose')
+                score.Losses += 1;
+            }
+            localStorage.setItem('final_score', JSON.stringify(score))
+        }
+    </script>
+</body>

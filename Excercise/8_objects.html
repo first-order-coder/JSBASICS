@@ -18,10 +18,10 @@
             price: 2095
         }
 
-        product_1.price += 500;
+        //product_1.price += 500;
         //console.log(product_1);
 
-        product_1['delivery-time'] = '3 days'
+        //product_1['delivery-time'] = '3 days'
         //console.log(product_1);
 
         function comparePrice(product1,product2){
@@ -43,8 +43,23 @@
             this wont work because objects are non-primitive types and they can only be compared by reference.
             */ 
            console.log(_.isEqual(product1, product2))
-           console.log(JSON.stringify(product1) === JSON.stringify(product2) )
+           console.log(JSON.stringify(product1) === JSON.stringify(product2))
         }
         SameProduct(product_1, product_2);
+
+        //input = prompt('Enter what to say');
+        //console.log(input.toLowerCase())
+        
+        let i = 0;
+        let new_str = '';
+        function repeatString(stringy_1, num_times) {
+            while(i<num_times){
+                new_str += stringy_1;
+                i++;
+            }
+            console.log(new_str);
+        }
+        repeatString('test1',3)
+        
     </script>
 </body>
