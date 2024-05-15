@@ -28,3 +28,18 @@ Day_02
 	>> MongoDB
 	>> Mailgun
 	>> Stripe
+
+Day_03:
+>> JS INTRO
+	>>var currentTime = new Date();
+	>> document.write(currentTime);
+		>> send output as part of the web document.
+	>> To break a line inside <script> tag --> ("<br>"+variable_name)
+	>> can use separate javascript files so that html file would not look very confusing.
+		>> include <script src="filename.js"></script>
+	>> To get a input field in the HTML
+		>> <input id="id_to_call_text" type="text">
+	>> to get the current time we can use now = new Date();
+		>> now.getHours()
+		>> now.getMinutes()
+		>> now.getSeconds() 
