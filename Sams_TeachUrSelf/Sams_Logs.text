@@ -3,7 +3,8 @@ Day_01
 >> To open the file using powershell type "ii filenmae.text"
 >> <a> </a> the 'a' stands for word anchor
 	>> <a> has a attribute href=""
->> To make a button press to go to a link place it as <a href="link"> <button>GO TO</button> </a> 
+>> To make a button press to go to a link place it as 
+	<a href="link"> <button>GO TO</button> </a> 
 >> <a href="mailto:youremail@domain.com"> This will link to your mail address </a> 
 >> <hr> to create a horizontal line
 >> <h1> To create a Heading </h1>
@@ -43,3 +44,24 @@ Day_03:
 		>> now.getHours()
 		>> now.getMinutes()
 		>> now.getSeconds() 
+
+Day_04:
+>> JS INTRO
+	>> Objects
+	 >> document.write (write method of object document)
+	 >> Data stored in a object is called property
+	 >> to call a object property/properties ObjectName.PropertyName -> (Bob.phone_num)
+	 >> objects can include methods. 
+		>> method is a function inside an object
+		>> document.write() write is a (function saved inside the object document) and its called a method.
+       >> we use conditionals as event handlers --> what to do if something comes up.
+       >> for(executed(one_time)_before_execution_of_code_block,
+		conditon_for_executing, executed_after_everytime_code_block_has_been_executed)  
+	>>for(i=0;i<=10;i++){code_block}
+	>>Example of event handler
+		>> <button onmouseover="alert('on button')">SEND MAIL</button>
+		>> onclick="" is also an example of evnt handler	
+		>> when mouse is over the button an alert will be triggered.
+		>> with (onmouseover) event handler we could count how many times a person will point 
+		   at a certain object on web page.
+		>> 

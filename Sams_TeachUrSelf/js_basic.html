@@ -14,12 +14,27 @@
                 document.write("<br>"+'words')
             }
             writetheWord()
+            
+            var personalInfo = {
+                "Name":"Jason",
+                "Address":"Unkonown",
+                "Occupied":"Unkonown"
+            }
+
         </script><br>
         <input id="pwd" type="text"><br>
-        <script src="js_basics_js_1.js"></script><br>
+        <script type="module" src="js_basics_js_1.js">
+            import {loopCheck, getTime,writeonDoc} from './js_basics_js_1.js'
+                loopCheck()
+                getTime()
+                writeonDoc()
+        </script>
+        <br>
         <a href="mailto:abc123@gmail.com">
-            <button>SEND MAIL</button>
-        </a><br>
-        
+            <button onmouseover="console.log(personalInfo.Name)">
+                SEND MAIL
+            </button>
+        </a>
+        <br>
     </body>
 </html>

@@ -1,10 +1,10 @@
 console.log('Hello')
-function writeonDoc(param1,param2,param3){
+export function writeonDoc(param1,param2,param3){
     document.write(param1, param2, param3)
     document.write("<br>" + 'This is from js_basics.js file')
 }
 
-function getTime(){
+export function getTime(){
     now = new Date();
     hours = now.getHours();
     mins = now.getMinutes();
@@ -14,4 +14,12 @@ function getTime(){
 
     writeonDoc(hours,mins,secs)
 }
-getTime()
+// getTime()
+
+export function loopCheck() {
+    for(i=1; i<=10; i++){
+        console.log('Hello')
+        document.write(''+"<br>")
+    }
+}
+// loopCheck()
