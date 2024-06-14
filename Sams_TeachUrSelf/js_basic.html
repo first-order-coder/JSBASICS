@@ -30,11 +30,28 @@
                 writeonDoc()
         </script>
         <br>
+        <script>
+            count = 0
+            function mouseonTop() {
+                count++;
+                localStorage.setItem('count',JSON.stringify(count))
+            }
+
+        </script>
         <a href="mailto:abc123@gmail.com">
-            <button onmouseover="console.log(personalInfo.Name)">
+            <button onmouseover="
+                mouseonTop()">
                 SEND MAIL
             </button>
         </a>
+        <button style="margin-top: 8px;"
+        onclick="console.log(JSON.parse(localStorage.getItem('count')))">
+            SHOW COUNT
+        </button>
+        <button style="margin-top: 8px;"
+        onclick="count=0">
+            RESET
+        </button>
         <br>
     </body>
 </html>

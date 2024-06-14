@@ -39,13 +39,13 @@
                 nested_object: {
                     nested_property: 'nested_value'
                 },
-                fun: function function_inside_object() {
-                    console.log('function inside an object');
+                fun: function() {
+                    console.log('function inside an object ass');
                 }
             };
             console.log(product2['name']+product2['color'])
             console.log(product2.nested_object.nested_property)
-            product2.fun();
+            product2.fun()
 
             //store a javscript object inside localStorage
             localStorage.setItem('product_2', JSON.stringify(product2)); //product2 is a javaScript object

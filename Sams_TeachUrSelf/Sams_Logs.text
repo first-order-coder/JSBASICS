@@ -64,4 +64,6 @@ Day_04:
 		>> when mouse is over the button an alert will be triggered.
 		>> with (onmouseover) event handler we could count how many times a person will point 
 		   at a certain object on web page.
-		>> 
+Day_05:
+>> Using separate .JS files --> advantage ==> can link to same .js file from two or more html documents.
+	>> because the browser stores this file in its cache, the time it takes to load webpage will be reduced.
