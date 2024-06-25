@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    
+</head>
+<body>
+    <script>
+        function getAlert(){
+            alert('Times UP');
+        }
+
+        function textDisplay(){
+            fetch("lyrics.txt")
+            .then(r=>r.text())
+            .then(text => {
+                lines = text.split("\n")
+                for (let line in text){
+                    document.write(line)
+                }                
+            })   
+        }
+        textDisplay()
+        //setInterval(textDisplay, 1000)
+        
+    </script>
+</body>

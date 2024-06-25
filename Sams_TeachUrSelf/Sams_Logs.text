@@ -67,3 +67,10 @@ Day_04:
 Day_05:
 >> Using separate .JS files --> advantage ==> can link to same .js file from two or more html documents.
 	>> because the browser stores this file in its cache, the time it takes to load webpage will be reduced.
+
+Day_06:
+>> to set a time out --> setTimeout(function_need_to_run, time_in_miliseconds)
+>> to set a time limit and recursive event --> setInterval(function_need_to_run, time_in_miliseconds)
+
+Day_07:
+>> parseInt("30 days of JS") will return the interger in the string which is --> '30'
