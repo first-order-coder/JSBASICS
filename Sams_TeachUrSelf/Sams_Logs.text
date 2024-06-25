@@ -1,3 +1,7 @@
+Chapters:
+01,02,04,05,07
+
+
 Day_01
 
 >> To open the file using powershell type "ii filenmae.text"
@@ -64,6 +68,7 @@ Day_04:
 		>> when mouse is over the button an alert will be triggered.
 		>> with (onmouseover) event handler we could count how many times a person will point 
 		   at a certain object on web page.
+
 Day_05:
 >> Using separate .JS files --> advantage ==> can link to same .js file from two or more html documents.
 	>> because the browser stores this file in its cache, the time it takes to load webpage will be reduced.
@@ -74,3 +79,22 @@ Day_06:
 
 Day_07:
 >> parseInt("30 days of JS") will return the interger in the string which is --> '30'
+>> stringTest.substring(0,5) --> return the strings characters indexing from 0 to 5 excluding 5.
+>> string indexing starts from 0.
+>> stringTest.charArt(0) --> return first character or 0th indexed character.
+>> spaces are counted and taken as a index too
+>> stringTest.indexOf('world',10) show the index of the word world after index 10 which is first occurence
+>> stringTest.lastIndexOf("world") give occurence of the last 
+>> to create an array --> scores = [1,3,3,45,55]
+>> string.split(seperator:string) --> will separate the string.
+	>> names.split(" ")
+>> string.join(joiners:string) --> will join the separated parts.
+	>> parts.join(" ** ") --> will be joined by ** in the middle
+>> sortedNames = names.sort() --> will sort out arrays.
+
+
+
+
+
+
+
