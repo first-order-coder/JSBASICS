@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <title> DOM </title>
+</head>
+<body>
+    <button> First </button>
+    <button class="second-btn"> Second </button>
+    <button class="third-btn"> Third </button>
+
+    <script>
+        console.log(document.querySelector('button').innerHTML)
+        console.log(document.querySelector(".second-btn").innerHTML)
+        console.log(document.querySelector(".third-btn").innerHTML)
+        
+        const buttonElement = document.querySelector(".second-btn")
+        console.log(buttonElement)
+        //since HTML element second-btn is a javascript object a value can be assigned to it.
+
+
+    </script>
+</body>
