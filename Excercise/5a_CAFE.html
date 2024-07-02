@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>
     <head>
         <title>
             Variables Excercise
@@ -8,27 +8,47 @@
                 margin-left: 110px;
                 display: inline-block;
             }
-            .coffee-buy{
-                background-color:greenyellow; margin-left: 120px;
-                margin-top: -32;
+            .para-coffee-1{
+                margin-left: 1px;
+                display: inline-block;
+            }
+
+            .para-bagel{
+                margin-left: 115px;
+                display: inline-block;
+            }
+            .para-bagel-1{
+                margin-left: 1px;
+                display: inline-block;
+            }
+
+            .para-soup{
+                margin-left: 125px;
+                display: inline-block;
+            }
+            .para-soup-1{
+                margin-left: 1px;
+                display: inline-block;
+            }
+            
+            .buy{
+                background-color:greenyellow; margin-left: -150px;
             }
         </style>
     </head>
 
     <body>
-        <p style="background-color: yellow; font-size: xx-large;">
-            CAFE CALC
-        </p> 
+        <h1 style="background-color: yellow; font-size: xx-large;"> CAFE CALC </h1> 
         <br>
 
-        <p style="display: inline-block;">
-            COFFEE = 5$ 
-        </p>
+        <!------------------------------------------>  
+        <p style="display: inline-block;"> COFFEE = 5$ </p>
         <p class="para-coffee">Coffee:</p>
-        <br>
+        <p class="para-coffee-1">0</p>
         
-        <button class="coffee-buy"; 
+        <button class="buy"; 
         onclick="
+        coffeeBuy()
         coffeeCount++;
         totalItems++;
         totalCost = totalCost + 5;
@@ -37,13 +57,14 @@
             BUY
         </button>
         <br>
-
-        <p style="display: inline-block;">
-            BAGEL = 3$ 
-        </p>
+        <!------------------------------------------>
+        <p style="display: inline-block;"> BAGEL = 3$ </p>
+        <p class="para-bagel">Bagel:</p>
+        <p class="para-bagel-1">0</p>
         
-        <button style="background-color:greenyellow; margin-left: 25px;";
+        <button class="buy";
         onclick="
+        bagelBuy()
         bagelCount++;
         totalItems++;
         totalCost = totalCost + 3;
@@ -52,12 +73,15 @@
             BUY
         </button>
         <br>
+        <!------------------------------------------>
 
-        <p style="display: inline-block;">
-            SOUP = 9$ 
-        </p>
+        <p style="display: inline-block;">SOUP = 9$</p>
+        <p class="para-soup">Soup:</p>
+        <p class="para-soup-1">0</p>
         
-        <button style="background-color:greenyellow; margin-left: 29px;" onclick="
+        <button class="buy"
+        onclick="
+        soupBuy()
         soupCount++;
         totalItems++;
         totalCost = totalCost + 9;
@@ -66,24 +90,18 @@
             BUY
         </button>
         <br>
+        <!------------------------------------------>
 
         <button style="background-color:greenyellow; margin-top: 15px; margin-left: 0px;" onclick="
         console.log(`Grand Total: $${totalCost}`)">
             TOTAL
         </button>
 
-        <button style="background-color:greenyellow; margin-top: 15px; margin-left: 0px;"onclick="
-        console.log(`Coffee: ${coffeeCount}`)
-        console.log(`Bagel:  ${bagelCount}`)
-        console.log(`Soup:   ${soupCount}`)
-        console.log(`Total Items: ${totalItems}`)
-        
-        ">
-            TOTAL ITEMS
-        </button>
+        <button style="background-color:greenyellow; margin-top: 15px; margin-left: 0px;"onclick="printtotalItems()"> TOTAL ITEMS </button>
 
         <button style="background-color: greenyellow;"
         onclick="
+        resetCounts()
         totalCost = 0;
         totalItems = 0;
 	    coffeeCount = 0;
@@ -93,13 +111,45 @@
         </button>
 
         <script>
-            const myName = 'Elon Musk';
-            let totalCost = 0;
+            let totalCost = JSON.parse(localStorage.getItem('totCost'))
+            
+            let coffeeElement = document.querySelector(".para-coffee-1");
+            let bagelElement = document.querySelector(".para-bagel-1");
+            let soupElement = document.querySelector(".para-soup-1");
+
+            function coffeeBuy() {
+                coffeeElement.innerText = coffeeCount+1;
+            }
+            function bagelBuy() {
+                bagelElement.innerText = bagelCount+1;
+            }
+            function soupBuy() {
+                soupElement.innerText = soupCount+1;
+            }
+
+            function resetCounts(){
+                coffeeElement.innerText = "0";
+                bagelElement.innerText = "0";
+                soupElement.innerText = "0";
+            }
+            function printtotalItems() {
+                console.log(`Coffee: ${coffeeCount}`)
+                console.log(`Bagel:  ${bagelCount}`)
+                console.log(`Soup:   ${soupCount}`)
+                console.log(`Total Items: ${totalItems}`)
+            }
+            
+            //let totalCost = 0;
             let totalItems = 0;
             let coffeeCount = 0;
             let bagelCount = 0;
             let soupCount = 0;
 
+            localStorage.setItem('totCost',JSON.stringify(totalCost))
+
+            
+
+            
         </script>
     </body>
 </DOCTYPE>

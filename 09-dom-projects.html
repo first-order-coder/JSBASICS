@@ -8,6 +8,9 @@
             font-family:Arial, Helvetica, sans-serif;
             font-weight: 700;
         }
+        .calc-btn{
+            background-color: yellow;
+        }
     </style>
     
     <title> DOM Projekts </title>
@@ -21,7 +24,24 @@
     <!--be mindful about the spaces in the button name if not this wont work properly.
     to solve this issue we can use innerText instead of innerHTML
     innerText will only pickup the text without any whitespaces.-->
+
+    <p> Amazon shipping Calculator </p>
+    <p> Free Shipping if total more than $50 </p>
+    <p> Shipping is $10 if total less than $50 </p>
+
+    <input class="shipping-cost"; placeholder="Total Cost"; 
+    onkeydown="handleCalcKeyDown(event)">
+
+    <button class="calc-btn"; onclick="inputCalc()">Calculate</button>
+    <p class="result-para"></p>
+
     <script>
+        function handleCalcKeyDown(event){
+            if (event.key==='Enter'){
+            inputCalc()
+            }
+        }
+
         function subsText(){
             let subBtnElement = document.querySelector('.sub-btn');
             if (subBtnElement.innerText === 'SUBSCRIBE'){
@@ -31,13 +51,27 @@
                 subBtnElement.innerText='SUBSCRIBE';
                 }
             }
+
         function paraText() {
             let paraElement = document.querySelector('.para-1')
             if(paraElement.innerHTML === 'Youtube Subscribe Button') {
-                paraElement.innerText = "HELLO"
+                paraElement.innerText = "HELLO";
             }else{
-                paraElement.innerText = 'Youtube Subscribe Button'
+                paraElement.innerText = 'Youtube Subscribe Button';
+                }
             }
+
+        function inputCalc() {
+            let inputElement = document.querySelector('.shipping-cost'); //dont forget the dot (.) before class-name --> .shipping-cost
+
+            let calcparaElm = document.querySelector('.result-para');
+            let cost = Number(inputElement.value)
+            if (inputElement.value >= 50){
+                calcparaElm.innerText = `$${cost}`;
+                console.log(cost)
+            }else{
+                calcparaElm.innerText = `$${cost + 10}`;
             }
+        }
     </script>
 </body>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        .head-btn{
+            background-color: green;
+            font-size:xx-large;
+        }
+        .tails-btn{
+            background-color: yellow;
+            font-size:xx-large;
+        }
+        .para-1{
+            background-color: azure;
+            font-size: x-large;
+        }
+        .submit-btn{
+            background-color: #3364cf;
+            border: 1px solid transparent;
+            border-radius: .75rem;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            cursor: pointer;
+            flex: 0 0 auto;
+            font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+            font-size: 1.125rem;
+            font-weight: 600;
+            line-height: 1.5rem;
+            padding: .75rem 1.2rem;
+            text-align: center;
+            text-decoration: none #6B7280 solid;
+            text-decoration-thickness: auto;
+            transition-duration: .2s;
+            transition-property: background-color,border-color,color,fill,stroke;
+            transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            width: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .livePara{
+            color:white;
+            font-size: x-large;
+        }
+
+    </style>
+
+    <title> 09 Excercise </title>
+</head>
+<body style="background-color: rgb(26, 25, 25);">
+    <button class="head-btn"; onclick="headClick()"> HEAD </button>
+    <button class="tails-btn"; onclick="tailClick()"> TAILS </button>
+    <p class="para-1"></p>
+
+    <input class="firstname"; placeholder="First Name"; onkeydown="pressEnter(event)">
+    <br>
+    <input class="lstname"; placeholder="Last Name"; onkeydown="pressEnter(event)">
+    <br>
+    <input class="age"; placeholder="Age"; onkeydown="pressEnter(event)">
+    <br>
+    <input class="number"; placeholder="Number"; onkeydown="pressEnter(event)">
+    <br>
+    <button class="submit-btn"; onclick="inputSubmit()"> SUBMIT </button>
+    <br>
+    <input class="livekeys"; placeholder="Type"; onkeydown="livePara(event)">
+    <p class="livePara"></p>
+
+    <script>
+        function livePara(event) {
+            let textLive = document.querySelector('.livePara')
+            let textLive2 = document.querySelector('.livekeys')
+            if (event.key === 'Backspace'){
+                textLive.innerText = textLive2.value
+            }else{
+                textLive.innerText = textLive2.value+event.key
+            }
+            
+        }
+        function pressEnter(event) {
+            if(event.key === 'Enter'){
+                inputSubmit()
+            }
+        }
+        function headClick(){
+            let headElement = document.querySelector('.head-btn')
+            let paraElement = document.querySelector('.para-1')
+
+            paraElement.innerText = `You chose ${headElement.innerText}`
+        }
+        function tailClick(){
+            let tailElement = document.querySelector('.tails-btn')
+            let paraElement = document.querySelector('.para-1')
+
+            paraElement.innerText = `You chose ${tailElement.innerText}`
+        }
+        function inputSubmit(){
+            let firstnameElement = document.querySelector('.firstname')
+            let lstnameElement = document.querySelector('.lstname')
+            let ageElement = document.querySelector('.age')
+            let numberElement = document.querySelector('.number')
+            //console.log(firstnameElement.innerHTML) --> there is no innerHTML or innerText for inputs 
+            console.log(firstnameElement.value)
+            console.log(lstnameElement.value)
+            console.log(ageElement.value)
+            console.log(numberElement.value)
+        }
+
+    </script>
+</body>
