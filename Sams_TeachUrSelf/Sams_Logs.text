@@ -3,7 +3,6 @@ Chapters:
 
 
 Day_01
-
 >> To open the file using powershell type "ii filenmae.text"
 >> <a> </a> the 'a' stands for word anchor
 	>> <a> has a attribute href=""
@@ -21,7 +20,6 @@ Day_01
               content="width=device-width, initial-scale=1.0">
 
 Day_02
-
 >>FrontEnd
 	>> React.js
 	>> Node.js
@@ -91,10 +89,39 @@ Day_07:
 >> string.join(joiners:string) --> will join the separated parts.
 	>> parts.join(" ** ") --> will be joined by ** in the middle
 >> sortedNames = names.sort() --> will sort out arrays.
+ 
+Day_08:
+>> history, document, navigator, location are all children of the window object.
+	>> history.go(-2) --> like clicking the back button twice.
+	>> history.back() == history.go(-1)
+	>> history.forward()
+>> location object stores info about current url loaded in the browser window.
+	>> location.protocol --> https
+	>> location.hostname --> www.google.com
+	>> location.port --> 80 (port number of the URL)
 
+Day_09:
+>> we can use <div> element to create a group of objects that can be controlled together.
+	>> its a container element.
+>> we can use id name and class name attributes to be used to do styles separately.
+	>> when using id  name --> <style> #id_name {} </style>
+	>> when using class name --> <style> .class_name {} </style>
+	>> but id name must only be used by one HTML element
+	>> class name can be used by sevaral elements
+>> position: fixed; 
+	>> is positioned relative to the viewport, means it always stays in the same place even if the page is scrolled.
+>> when in positions top bottom right and left, the distance is calculated from the end of the
+webpages edges.
+ 	>> left: 100px; right: 100px; top: 1800px; 100px from the left edge of the website and 1800px from the top edge of the webpage.
 
-
-
-
-
+Day_10:
+>> To get the actual width of an element we have to take calculation of the margin + border + padding.
+	>> padding is the space between an element's border and the element's content.
+>> 2 main styles for display style property --> 'block' and 'inline'
+	>> block elements placed automatically on a new raw <p>, <div>
+	>> inline elements placed on the same raw 
+>> to control the way things stack up --> "z-index:0", on top of each other
+	>> front, backward or on front or on back
+	>> higher the z-index is element will be shown on top and lower z-index will appear under higher ones.
+	>> z-index:0, z-index:1, z-index:2, z-index:3
 

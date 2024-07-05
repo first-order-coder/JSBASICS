@@ -1,7 +1,51 @@
 <!DOCTYPE html>
 <head>
-
+    <title>CSS styles</title>
+    <!-- the way how to use a id name to change in style -->
+    <style>
+        #container1{
+            background-color: red;
+            position: absolute; left: 100px; right: 100px; top: 1800px;
+            border: 5px solid #000;
+            margin: 10px;
+            padding: 10px;
+        }
+        #containertest{
+            background-color: red;
+            position: relative; left: 100px; right: 100px; top: 800px;
+            border: 5px solid #000;
+            margin: 10px;
+            padding: 10px;
+        }
+        .container2{
+            background-color: yellow;
+            position: fixed; left: 200px; right: 0px; top: 0px;
+        }
+        .container3{
+            background-color:greenyellow;
+            position: sticky;
+            width: 300px;
+            height: 300px;
+        }
+        .container4{
+            background-color: gray;
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="container1">
+        <p>Hello</p>
+    </div>
+    <div id="containertest">
+        <p>Hello</p>
+    </div>
+    <div class="container2">
+        <p> Fixed position </p>
+    </div>
+    <div class="container3">
+        <p> STICKY position </p>
+        <div class="container4">
+            <p> Note: Internet Explorer does not support sticky positioning. Safari requires a -webkit- prefix (see example below). You must also specify at least one of top, right, bottom or left for sticky positioning to work. </p>
+        </div>     
+    </div>
 </body>

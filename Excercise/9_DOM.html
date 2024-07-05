@@ -43,26 +43,32 @@
             color:white;
             font-size: x-large;
         }
+        .body{
+            background-image: url(bg.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
 
     </style>
 
     <title> 09 Excercise </title>
 </head>
-<body style="background-color: rgb(26, 25, 25);">
+<body class="body">
     <button class="head-btn"; onclick="headClick()"> HEAD </button>
     <button class="tails-btn"; onclick="tailClick()"> TAILS </button>
     <p class="para-1"></p>
 
-    <input class="firstname"; placeholder="First Name"; onkeydown="pressEnter(event)">
-    <br>
-    <input class="lstname"; placeholder="Last Name"; onkeydown="pressEnter(event)">
-    <br>
-    <input class="age"; placeholder="Age"; onkeydown="pressEnter(event)">
-    <br>
-    <input class="number"; placeholder="Number"; onkeydown="pressEnter(event)">
-    <br>
-    <button class="submit-btn"; onclick="inputSubmit()"> SUBMIT </button>
-    <br>
+    <div id="layer1"; style="position: absolute; left: 100px; top: 100px;">
+        <input class="firstname"; placeholder="First Name"; onkeydown="pressEnter(event)">
+        <br>
+        <input class="lstname"; placeholder="Last Name"; onkeydown="pressEnter(event)">
+        <br>
+        <input class="age"; placeholder="Age"; onkeydown="pressEnter(event)">
+        <br>
+        <input class="number"; placeholder="Number"; onkeydown="pressEnter(event)">
+        <br>
+        <button class="submit-btn"; onclick="inputSubmit()"> SUBMIT </button>
+    </div>
     <input class="livekeys"; placeholder="Type"; onkeydown="livePara(event)">
     <p class="livePara"></p>
 
