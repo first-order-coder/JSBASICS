@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add sentences</title>
+    <link href="main.css"; rel="stylesheet"/>
+</head>
+<body>
+    <div class="para-1">
+        <p> Add your own sentence </p>
+    </div>
+    <div class="para-2">
+        <p>You're just too good to be true<br>
+            Can't take my eyes off of you</p>
+    </div>
+    <div id="add-sentence">
+        <input id="input-1"; size="28" placeholder="Type Senetence"; onkeydown="pressEnter(event)">
+        <button class="add-btn"; onclick="addSentence()"> ADD </button>
+    </div>
+    <script>
+        let sentenceElement = document.querySelector('.para-2');
+        let inputElement = document.querySelector('#input-1');
+
+        function addSentence(){
+            sentenceElement.innerText = `${sentenceElement.innerText}\n`  + `${inputElement.value}`; // \n to get a new line every time added
+
+            inputElement.value = "" // to clear the input element after submitting.
+        }
+        function pressEnter(event){
+            if (event.key === 'Enter'){
+                addSentence()
+            }
+        }
+    </script>
+</body>
+</html>

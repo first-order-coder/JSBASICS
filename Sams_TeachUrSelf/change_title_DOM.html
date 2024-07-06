@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <title> Text modifying </title>
+    <style>
+        #para-1{
+            background-color: yellowgreen;
+            font-size: xxx-large;
+        }
+        #para-2{
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p id="para-1"> Change ME </p>
+    </div>
+    <div>
+        <p id="para-2"> Enter a new title and click the button and bam!</p>
+        <input placeholder="Type inside"; id="input-1";  onkeydown="pressEnter(event)">
+        <button class="change-btn"; onclick="changeText()"> CHANGE </button>
+    </div>
+    <br>
+    <div class="hide-show">
+        <button id="show-btn"; onclick="changeDisplay('show')"> SHOW </button>
+        <button id="hide-btn"; onclick="changeDisplay('hide')"> HIDE </button>
+    </div>
+    <script>
+        let inputElement = document.querySelector("#input-1")
+        let paraElement = document.querySelector("#para-1")
+        function changeText() {
+            paraElement.innerText = inputElement.value
+        }
+        function changeDisplay(action){
+            if (action === 'show'){
+                paraElement.style.display = "block";
+            }
+            else if (action === 'hide'){
+                paraElement.style.display = "none";
+            }
+        }
+        function pressEnter(event){
+            if (event.key === 'Enter') {
+                changeText()
+            }
+        }
+    </script>
+</body>

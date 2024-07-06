@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+    <title> Positioning Elements with Div </title>
+    <style>
+        .para-1{
+            font-size: xx-large;
+        }
+        .btns{
+            position:absolute; left: 150px;
+        }
+        #para-2{
+            width: 150px;
+            height: 150px;
+            border: 10px solid;
+            padding: 10px;
+            border-color: black;
+            background-color: yellow;
+            position: absolute; 
+            top: 150px; 
+        }
+    </style>
+</head>
+<body>
+    <div><p class="para-1">Positioning Elements</p></div>
+    <div class="btns">
+        <button onclick="moveLeft()"> Left </button>
+        <button onclick="moveRight()"> Right </button>
+        <button onclick="moveUp()"> Up </button>
+        <button onclick="moveDown()"> Down </button>
+        <button onclick="showElement()"> Show </button>
+        <button onclick="hideElement()"> Hide </button>
+    </div>
+    <br>
+
+    <hr>
+    <div id="para-2">
+        <p>This square is an absouletly positioned conatiner that you can move using the buttons above</p>
+    </div>
+    <script>
+        const paraElm = document.getElementById("para-2")
+        paraElm.style.backgroundColor = "lightblue";
+        
+        function moveLeft(){
+            let currentLeft = parseInt(window.getComputedStyle(paraElm).left);
+            paraElm.style.left = `${currentLeft - 10}px`
+        }
+        function moveRight() {
+            let currentLeft = parseInt(window.getComputedStyle(paraElm).left);
+            paraElm.style.left = `${currentLeft + 10}px`;
+        }
+        function moveUp() {
+            let currentTop = parseInt(window.getComputedStyle(paraElm).top);
+            paraElm.style.top = `${currentTop - 10}px`;
+        }
+        function moveDown() {
+            let currentTop = parseInt(window.getComputedStyle(paraElm).top);
+            paraElm.style.top = `${currentTop + 10}px`;
+        }
+        function showElement() {
+            paraElm.style.display = "block";
+        }
+
+        function hideElement() {
+            paraElm.style.display = "none";
+        }
+        
+        // console.log(paraElm)
+        //top must be more than 150px otherwise it would go above
+    </script>
+</body>

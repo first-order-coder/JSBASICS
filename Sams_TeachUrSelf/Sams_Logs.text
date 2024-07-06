@@ -114,14 +114,38 @@ Day_09:
 webpages edges.
  	>> left: 100px; right: 100px; top: 1800px; 100px from the left edge of the website and 1800px from the top edge of the webpage.
 
-Day_10:
+Day_13:
 >> To get the actual width of an element we have to take calculation of the margin + border + padding.
 	>> padding is the space between an element's border and the element's content.
 >> 2 main styles for display style property --> 'block' and 'inline'
 	>> block elements placed automatically on a new raw <p>, <div>
 	>> inline elements placed on the same raw 
->> to control the way things stack up --> "z-index:0", on top of each other
+>> To control the way things stack up --> "z-index:0", on top of each other
 	>> front, backward or on front or on back
 	>> higher the z-index is element will be shown on top and lower z-index will appear under higher ones.
 	>> z-index:0, z-index:1, z-index:2, z-index:3
+	>> z-index style can affect any HTML content including images.
+>> using float
+	>> img {
+		 float:right 	--> image should float to the right in a text
+	       }
+>> when we use <div> to create a container we can move all the elements inside of it together.
+>> border:10px solid; must give if it is solid or not otherwise it wont appear.
+>> to access style property using DOM 
+	>> paraElm = document.getElementById("div_id_you_chose")
+	>> paraElm.style.backgroundColor = "lightblue"; OR
+	>> the best way ----> window.getComputedStyle(paraElm).left
+ 		>> this will get the current left position of the element
+ 
+>> to hide a element we can use paraElm.
+	>> style.display = "block";
+	>> style.display = "none";
 
+Day_14;
+>> to get the basic layoout type --> html:5 and TAB
+>> to open a div container with class --> .class_name and TAB'
+>> we can use onkeydown="pressEnter(event)" in input fields.
+>> getComputedStyle will return all the css style proeperties in the element.
+>> to add a new line with javascript 
+	>> `${sentenceElement.innerText}\n` use \n inside a string
+>> 
