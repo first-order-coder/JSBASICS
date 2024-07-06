@@ -1,1 +1,32 @@
-
+.image-1{
+    float: left;
+}
+.para-1{
+    width: 300px;
+    height: 450px;
+    position:absolute;
+    left: 630px;
+    font-size: large;
+    margin-top: -19px;   
+}
+.forward-btn{
+    font-size: xx-large;
+    position: fixed;
+    left: 350px;
+}
+.backward-btn{
+    font-size: xx-large;
+    position: absolute;
+    right: 330px;
+}
+.first-image-btn{
+    border: none;
+    margin: -6px;
+}
+.second-image-btn{
+    border: none;
+    margin: -6px;
+}.third-image-btn{
+    border: none;
+    margin: -6px;
+}

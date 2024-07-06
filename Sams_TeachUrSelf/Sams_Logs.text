@@ -148,4 +148,5 @@ Day_14;
 >> getComputedStyle will return all the css style proeperties in the element.
 >> to add a new line with javascript 
 	>> `${sentenceElement.innerText}\n` use \n inside a string
->> 
+>>to separate the css
+	>> use <link href="main.css"; rel="stylesheet"> must be written in order to work 
