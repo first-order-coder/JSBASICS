@@ -150,3 +150,9 @@ Day_14;
 	>> `${sentenceElement.innerText}\n` use \n inside a string
 >>to separate the css
 	>> use <link href="main.css"; rel="stylesheet"> must be written in order to work 
+
+>> Day_15:
+>> to get the CSS on javascript
+	>> let subBtnElement = document.querySelector('.class-subtBtn') 
+	>> window.getComputedStyle(subBtnElement).borderRadius
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="tute4.css">
+        <title>Tutorial 4</title>
+    </head>
+    <body>
+        <center>
+        <h1><b>Hotel Reservation</b></h1>
+        </center>
+        <form>
+            <fieldset class="partA">
+                <legend id="buk">Personal Details</legend>
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Enter your first name"><br>
+                <label for="surname">Surname:</label>
+                <input type="text" id="surname" name="surname" placeholder="Enter your surname"><br>
+                <label for="email">Email address:</label>
+                <input type="email" id="email" name="email"><br>
+                <label for="pass">Setup a password:</label>
+                <input type="password" id="pass" name="pass" size="51" placeholder="Min 8 characters,use at least 1 caps, no special characters "><br>
+            </fieldset><br>
+
+            <fieldset class="partB">
+                <legend id="bug">Booking Details</legend>
+                <label for="checkday">Checking day:</label>
+                <input type="date" id="checkday" name="checkday"><br>
+                <label for="days">Number of days:</label>
+                <input type="number" id="days" name="days"><br><br>
+                <div class="radio-group">
+                <input type="radio" id="singleroom" name="room">
+                <label for="singleroom">Single Room</label><br><br>
+                <input type="radio" id="doubleroom" name="room">
+                <label for="doubleroom">Double Room</label><br><br> 
+                <input type="radio" id="kingroom" name="room">
+                <label for="kingroom">King Room</label><br><br>
+                </div>
+                <label for="breakfast">Breakfast:</label>
+                <select name="breakfast" id="breakfast">
+                  <option value="include">Include</option>
+                  <option value="exclude">Exclude</option>
+                </select><br><br>
+                <label for="requirements">Special Requirements:</label>
+                <textarea id="requirements" name="requirements" rows="4" cols="20">Please provide any special requirements</textarea>
+            </fieldset><br>
+
+                <button id="btn1" type="submit">Reset</button>
+                <button id="btn2" type="reset">Send</button>
+
+        </form>
+    </body>
+</html>

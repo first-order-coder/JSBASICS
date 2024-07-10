@@ -2,14 +2,21 @@
 <head>
     <style>
         .sub-btn{
-            background-color: white;
-            border-color: white;
+            background-color: rgb(0, 0, 0);
+            color: white;
             border-radius: 12px;
             font-family:Arial, Helvetica, sans-serif;
-            font-weight: 700;
+            font-weight: bold;
+            padding: 10px;
+            cursor: pointer;
+            font-size: larger;
         }
         .calc-btn{
             background-color: yellow;
+        }
+        .is-subscribed{
+            background-color: white;
+            color:black;
         }
     </style>
     
@@ -44,11 +51,22 @@
 
         function subsText(){
             let subBtnElement = document.querySelector('.sub-btn');
+
             if (subBtnElement.innerText === 'SUBSCRIBE'){
-                subBtnElement.innerText = 'SUBSCIBED';
+                subBtnElement.innerText = 'SUBSCRIBED';
+
+                //1st method to change color when clicked
+               /* subBtnElement.style.backgroundColor = 'white';
+                subBtnElement.style.color = 'black'; */
+
+                //2nd method to change color when clicked.
+                subBtnElement.classList.add('is-subscribed')//will add a class named is-subscribed to subBtnElement
                 }
             else{
                 subBtnElement.innerText='SUBSCRIBE';
+                subBtnElement.classList.remove('is-subscribed')
+                // subBtnElement.style.backgroundColor = 'black';
+                // subBtnElement.style.color = 'white';
                 }
             }
 

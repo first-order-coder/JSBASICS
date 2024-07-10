@@ -22,11 +22,14 @@
 .first-image-btn{
     border: none;
     margin: -6px;
+    cursor: pointer;
 }
 .second-image-btn{
     border: none;
     margin: -6px;
+    cursor: pointer;
 }.third-image-btn{
     border: none;
+    cursor: pointer;
     margin: -6px;
 }
