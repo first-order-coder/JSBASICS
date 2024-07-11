@@ -13,13 +13,16 @@ function requestBtnExit(){
 }
 
 let gamingBtnElm = document.querySelector('.gaming-btn')
-function gamingBtnClick() {
-    if (gamingBtnElm.style.backgroundColor === 'white'){
-        gamingBtnElm.style.backgroundColor = 'black';
-        gamingBtnElm.style.color = 'white';
+let musicBtnElm = document.querySelector('.music-btn')
+let techBtnElm = document.querySelector('.tech-btn')
+
+function BtnClick(buttonClicked) {
+    if (buttonClicked.style.backgroundColor === 'white'){
+        buttonClicked.style.backgroundColor = 'black';
+        buttonClicked.style.color = 'white';
 
     }else{
-        gamingBtnElm.style.backgroundColor = 'white';
-        gamingBtnElm.style.color = 'black';
+        buttonClicked.style.backgroundColor = 'white';
+        buttonClicked.style.color = 'black';
     }
 }

@@ -12,7 +12,29 @@
 .gaming-btn{
     background-color: white;
     color: black;
-    padding: 5px;
+    padding: 10px;
+    margin: 10px;
+    font-size: xxx-large;
+    font-family:Arial, Helvetica, sans-serif;
+    border: 2px solid ;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.music-btn{
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    font-size: xxx-large;
+    font-family:Arial, Helvetica, sans-serif;
+    border: 2px solid ;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.tech-btn{
+    background-color: white;
+    color: black;
+    padding: 10px;
     margin: 10px;
     font-size: xxx-large;
     font-family:Arial, Helvetica, sans-serif;

@@ -9,10 +9,11 @@
 <body>
     <button class="request-btn"; onmouseover="requestBtnEnter()"; onmouseleave="requestBtnExit()"> Request Now </button>
     <br>
-    <button class="gaming-btn"; onclick="gamingBtnClick()"> Gaming </button>
-    <button class="gaming-btn"; onclick="gamingBtnClick()"> Music </button>
-    <button class="gaming-btn"; onclick="gamingBtnClick()"> Tech </button>
-
+    <button class="gaming-btn"; onclick="BtnClick(gamingBtnElm)"> Gaming </button>
+    <button class="music-btn"; onclick="BtnClick(musicBtnElm)"> Music </button>
+    <button class="tech-btn"; onclick="BtnClick(techBtnElm)"> Tech </button>
+    <!-- The reason buttons dont change the appearance on first click is beacause of the style.backgroundColor property is empty unitl it is explicitly set. so when clicked for the first time the style.backgroundColor = "", and it doesnt match white or black.
+     Hence it fails the first comparison. -->
     <script src="main.js"></script>
 </body>
 </html>

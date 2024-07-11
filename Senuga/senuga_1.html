@@ -14,22 +14,22 @@
        <img src="food.jpeg" alt="food pic" width="50px" height="50px">
        <h1 class="logo">Feed Global</h1>
        <div class="tag">
-         <h1>Submit</h1>
-       </div>
+        <button class="submit-btn"; onclick="submitBtn(); displayInfo()">SUBMIT</button>
+      </div>
      </div>
   
       <div class="lefty">
         <nav class="doc">
-          <a hrf="#" class="active">
+          <a href="#" class="active">
             <i class="fa fa-user"></i>
           </a>
-          <a hrf="#">
+          <a href="#">
             <i class="fa fa-tasks"></i>
           </a>
-          <a hrf="#">
+          <a href="#">
             <i class="fa fa-donate"></i>
           </a>
-          <a hrf="#">
+          <a href="#">
             <i class="fa fa-cog"></i>
           </a>
         </nav>
@@ -37,34 +37,80 @@
 
       <div class="righty">
         <div class="userpro">
-          <h1>Personal Info</h1>
-          <h2>Full Name</h2>
-          <p>Senuga Rathnayaka<button class="button">Update</button></p>
-          <h2>Birthday</h2>
-          <p>May 24<button class="button">Reset</button></p>
-          <h2>Gender</h2>
-          <div class="gender">
-          <select id="gender" name="gender">
-             <option value="male">Male</option>
-             <option value="female">Female</option>
-          </select>
+          <h1 class="header-1">Personal Info</h1>
+
+          <div class="firstname">
+            <label class="label">First Name:</label>
+            <input type="text" id="name-first"; placeholder="First Name"; autofocus>
+            <button class="update-btn"; onclick="updateBtn(firstNameElm)">Update</button>
           </div>
-          <h2>Email</h2>
-          
-          <p>senuga29528@gmail.com<button class="button">Update</button></p>
-          <h2>Password</h2>
-          <p>****<button class="button">Change</button></p>
-          <h2>Tel-No</h2>
-          <p>0768332145<button class="button">Change</button></p>
           <br>
-          <field>
-          <input class="full-name"; placeholder="Full Name";>
+
+          <div class="lastname">
+            <label class="label">Last Name:</label>
+            <input type="text" id="name-last"; placeholder="Last Name">
+            <button class="update-btn"; onclick="updateBtn(lastNameElm)">Update</button>
+          </div>
+          <br>
+
+          <div class="email">
+            <label class="label">EMAIL ADDRESS:</label>
+            <input type="email" id="email-input"; placeholder="Email">
+            <button class="update-btn"; onclick="updateBtn(emailElm)">Update</button>
+          </div>
+          <br>
+
+          <div class="telephone">
+            <label class="label">TELEPHONE NO:</label>
+            <input type="tel" id="telephone-input"; placeholder="Number">
+            <button class="update-btn"; onclick="updateBtn(phoneElm)">Update</button>
+          </div>
+          <br>
+
+          <div class="password">
+            <label class="label">Password </label>
+            <input type="password"; id="password-input"; placeholder="Password">
+            <br>
+            <br>
+            <label class="label">Confirm Password </label>
+            <input type="password"; id="password-recheck"; placeholder="Password">
+            <br>
+            <p class="empty-para"></p>
+          </div>
+          <br>
+
+          <div class="bithday">
+            <label class="label">DATE OF BIRTH</label>
+            <input type="date" value="2024-07-10" id="dob-input">
+          </div>
+          <br>
           
-          </field>
+          <div class="gender">
+            <label class="label">GENDER</label>
+            <select id="gender" name="gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+          <br>
+          <div class="display-info">
+            <p class="empty-para-2"></p>
+            <br>
+            <p class="empty-para-3"></p>
+            <br>
+            <p class="empty-para-4"></p>
+            <br>
+            <p class="empty-para-5"></p>
+            <br>
+            <p class="empty-para-6"></p>
+            <br>
+            <p class="empty-para-7"></p>
+          </div>
         </div> 
       </div>
     </div>
     
+    <script src="main.js"></script>
     <footer>
       <p>
          Follow us for more <br>

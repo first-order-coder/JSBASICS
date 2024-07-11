@@ -2,6 +2,180 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+.update-btn{
+    font-family: "Roboto",sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight:400;
+    border: none;
+    color: #ffffff;
+    position:absolute;
+    left: 400px;
+    background-color: #070707;
+    border-radius: 5px;
+}
+
+#name-first{
+    border: solid 1px;
+    border-radius: 3px;
+    border-width: 0.5px;
+    position: absolute; 
+    left: 220px;
+    outline: none;
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(237, 235, 235);
+}
+#name-last{
+    border: solid 1px;
+    border-radius: 3px;
+    border-width: 0.5px;
+    position: absolute; 
+    left: 220px;
+    outline: none;
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(237, 235, 235);
+}
+
+#dob-input{
+    position: absolute;
+    left: 220px;
+    font-family:sans-serif;
+    font-size: 12.5px;
+}
+
+.label{
+    color: #777;
+    font-family: "Roboto",sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-left: 25%;
+    font-weight: bold;
+}
+
+#gender{
+    position:absolute;
+    left: 220px;
+}
+
+#email-input{
+    border: solid 1px;
+    border-radius: 3px;
+    border-width: 0.5px;
+    position: absolute; 
+    left: 220px;
+    outline: none;
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(237, 235, 235);
+}
+
+#password-input{
+    border: solid 1px;
+    border-radius: 3px;
+    border-width: 0.5px;
+    position: absolute; 
+    left: 260px;
+    outline: none;
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(237, 235, 235);
+}
+
+#password-recheck{
+    border: solid 1px;
+    border-radius: 3px;
+    border-width: 0.5px;
+    position: absolute; 
+    left: 260px;
+    outline: none;
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(237, 235, 235);
+}
+
+#telephone-input{
+    border: solid 1px;
+    border-radius: 3px;
+    border-width: 0.5px;
+    position: absolute; 
+    left: 220px;
+    outline: none;
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(237, 235, 235);
+}
+.label-password{
+    color: #777;
+    font-family: "Roboto",sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.header-1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:x-large;
+    position: relative;
+    left: -15px;
+}
+
+.submit-btn{
+    font-family: "montserrat",sans-serif;
+    border: none;
+    font-size: 17px;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    background:none;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+}
+.empty-para{
+    color: #ff0000;
+    font-family: "Roboto",sans-serif;
+    font-size: 11px;
+    margin-left: 25%;
+    font-weight: bold;
+    left: 225px;
+}
+.display-info{
+    background-color: white;
+    position: absolute;
+    bottom: -315px;
+    left: -50px;
+    width: 520px;
+    height:200px;
+    padding: 10px;
+    
+}
+.empty-para-2{
+    font-size:medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.empty-para-3{
+    font-size:medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.empty-para-4{
+    font-size:medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.empty-para-5{
+    font-size:medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.empty-para-6{
+    font-size:medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.empty-para-7{
+    font-size:medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 body{
     background: linear-gradient(to right,#3498db,#8e44ad);
     overflow: hidden;
@@ -42,6 +216,7 @@ body{
     cursor: pointer;
     transform: rotate(-90deg);
     transition: all 0.5s ease-in-out;
+    border-radius: 10px;
 }
 
 .tag h1{
@@ -71,10 +246,12 @@ nav a{
     list-style: none;
     padding: 55px;
     color: #fff;
-    font-size: 16px;
+    font-size: 26px;
     display:flex;
     transition: all 0.3s ease-in-out;
     position: relative;
+    left: -25px;
+    top: -5px;
 }
 
 nav a:hover{
@@ -100,6 +277,7 @@ nav a :first-child{
 .userpro{
     position: absolute;
     width: 70%;
+
 }
 
 h1{
@@ -182,15 +360,3 @@ img {
     padding-left: 2px;
 }
 
-.gender{
-    text-align: right;
-    right: 50%;
-}
-.full-name{
-    border: none;
-    border-bottom: solid; 
-    border-width: 0.25px;
-    position: absolute; 
-    left: 100px;
-    outline: none;
-}
