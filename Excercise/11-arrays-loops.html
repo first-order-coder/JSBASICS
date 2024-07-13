@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input-1" placeholder="enter number">
+    <button onclick="display()"> ADD </button>
+    <div class="para-1"></div>
+    <script>
+        let inputElm = document.querySelector('#input-1')
+        let paraElm = document.querySelector('.para-1')
+
+        function display()
+        {
+            numbersRange()
+            console.log(inputElm.value)
+        }
+
+        let emptyVal = [];
+
+        function numbersRange()
+        {
+            for (let i= 0; i <= inputElm.value; i++){
+                paraElmHTML = `<p>${i}</p>`
+                emptyVal += paraElmHTML // if we use .push then we would get commas(',') in the middle
+                                        // so instead we can use += to add paraElmHTML to emptyVals.
+            }
+            paraElm.innerHTML = emptyVal
+        }
+    </script>
+</body>
+</html>

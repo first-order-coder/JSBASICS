@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="location.reload()">REOLOAD</button> <!--will reload the current page-->
+    <div class="object-test">
+        <input type="text">
+    </div>
+    <script>
+        //these 2 ways are kind of similar
+        // -->> object literals
+        // 1)
+        const person = new Object()
+        function addtoObject(){
+            person.firstname = 'Giun'
+        }
+        addtoObject()
+        console.log(person)
+
+        // 2)
+        const Student1 = {
+            firstname: "Jack",
+            age: 20
+        }
+        console.log(Student1)
+
+
+        // to create many objects of the same type, we use
+        //-->> object constructor function.
+        function Person(first, last, age, eye){
+            this.firstName = first; // this keyword refers to the current object.
+            this.lastName = last;
+            this.age = age;
+            this.eyeColor = eye;
+        }
+        
+        // in this way we can create many objects with the same type
+        const myFather = new Person("John", "Doe", 50, "blue") //created a object myFather according to the Person object type.
+        // this is called an instance of the Person object.
+        
+        const myMother = new Person("Sally", "Rally", 48, "green");
+        const mySister = new Person("Anna", "Rally", 18, "green");
+        const mySelf = new Person("Johnny", "Rally", 22, "green");
+        console.log(myFather)
+
+        
+        
+    </script>
+</body>
+</html>

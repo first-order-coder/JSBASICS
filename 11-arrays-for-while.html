@@ -22,6 +22,19 @@
 
         myArray.splice(5, 1) // remove 5 th indexed element
         console.log(myArray)
+
+        const nums = [1, 1, 3];
+        let total = 0;
+        const emptyArr = [];
+
+        for (i=0; i < nums.length; i++){
+            let numVal = nums[i]
+            total += numVal
+            
+            emptyArr.push(numVal * 2)
+        }
+        console.log(total)
+        console.log(emptyArr)
     </script>
 </body>
 </html>

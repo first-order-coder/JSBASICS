@@ -1,5 +1,5 @@
-Chapters:
-01,02,04,05,07
+Chapters Done:
+01,02,03,04,05,06,07
 
 
 Day_01
@@ -115,7 +115,7 @@ webpages edges.
  	>> left: 100px; right: 100px; top: 1800px; 100px from the left edge of the website and 1800px from the top edge of the webpage.
 
 Day_13:
->> To get the actual width of an element we have to take calculation of the margin + border + padding.
+>> To get the actual width of an element we have to take calculations of the margin + border + padding.
 	>> padding is the space between an element's border and the element's content.
 >> 2 main styles for display style property --> 'block' and 'inline'
 	>> block elements placed automatically on a new raw <p>, <div>
@@ -156,3 +156,15 @@ Day_14;
 	>> let subBtnElement = document.querySelector('.class-subtBtn') 
 	>> window.getComputedStyle(subBtnElement).borderRadius
 
+Day_16:
+>> To convert string to a interger number --> parseInt()
+>> To convert string to a floating-point number --> parseFloat() 
+>> To split a string --> string.split(" ")
+>> to create an object
+	>> const obect_name = new Object()
+>> to create an object using object constructor function
+	>> function Objectname(property_1, proeperty_2, property_3)
+		{       *have to use this keyword to make sure we are selecting this objcet
+			this.firstProperty = property_1,
+			this.secondProperty = property_2
+		}
