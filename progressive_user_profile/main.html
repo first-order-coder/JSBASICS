@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="main-page">
+        <p> CLICK TO GET STARTED </p>
+        <button onclick="popUpShow()"> START </button>
+    </div>
+    <div class="popup-content">
+        <div class="pop-up" id="pop-up-1">
+            <p class="step-description-1"> STEP 1 Personal Details | Question 1/5</p>
+            <div class="question-layer"></div>
+            <label class="prompt-question"> First Name </label>
+            <input placeholder="First Name" id="first-name-input" autofocus>
+            <div class="buttons">
+                <button class="skip-btn" id="skip-btn-1" onclick="progressBarDisplay()"> SKIP </button>
+                <button class="next-btn" id="skip-btn-1" onclick="progressBarDisplay(), nextBtnPress(10,1)"> NEXT </button>
+            </div>
+        </div>
+        <div class="pop-up-2">
+            <p class="step-description-2"> STEP 1 Personal Details | Question 2/5</p>
+            <div class="question-layer"></div>
+            <label class="prompt-question"> Last Name </label>
+            <input placeholder="Last Name" id="last-name-input" autofocus>
+            <div class="buttons">
+                <button class="skip-btn" id="skip-btn-2" onclick="progressBarDisplay()"> SKIP </button>
+                <button class="next-btn" id="next-btn-2" onclick="progressBarDisplay(), nextBtnPress(10,2)"> NEXT </button>
+            </div>
+        </div>
+        <div class="pop-up-3">
+            <p class="step-description-3"> STEP 1 Personal Details | Question 3/5</p>
+            <div class="question-layer"></div>
+            <label class="prompt-question"> Age </label>
+            <input placeholder="Your Age" id="age-input" autofocus>
+            <div class="buttons">
+                <button class="skip-btn" id="skip-btn-3" onclick="progressBarDisplay()"> SKIP </button>
+                <button class="next-btn" id="next-btn-3" onclick="progressBarDisplay(), nextBtnPress(10,3)"> NEXT </button>
+            </div>
+        </div>
+        <div class="pop-up-4">
+            <p class="step-description-4"> STEP 1 Personal Details | Question 4/5</p>
+            <div class="question-layer"></div>
+            <label class="prompt-question"> Gender </label>
+            <input type="text" placeholder="Gender" id="gender-input" autofocus>
+            <div class="buttons">
+                <button class="skip-btn" id="skip-btn-4" onclick="progressBarDisplay()"> SKIP </button>
+                <button class="next-btn" id="next-btn-4" onclick="progressBarDisplay(), nextBtnPress(10,4)"> NEXT </button>
+            </div>
+        </div>
+        <div class="pop-up-5">
+            <p class="step-description-5"> STEP 1 Personal Details | Question 5/5</p>
+            <div class="question-layer"></div>
+            <label class="prompt-question"> Student ID </label>
+            <input type="text" placeholder="student ID" id="std-input" autofocus>
+            <div class="buttons">
+                <button class="skip-btn" id="skip-btn-5" onclick="progressBarDisplay()"> SKIP </button>
+                <button class="next-btn" id="skip-btn-5" onclick="progressBarDisplay(), nextBtnPress(10,5)"> NEXT </button>
+            </div>
+        </div>
+        <div class="pop-up-6">
+            <p class="step-description-6"> STEP 1 Complete</p>
+            <div class="buttons">
+                <button class="next-btn" id="next-btn-6" onclick="progressBarDisplay(), nextBtnPress(0,6)"> NEXT </button>
+            </div>
+        </div>
+        
+        <div class="pop-up-8">
+            <p class="step2-description-2"> STEP 2 Qualifications | Question 2/4</p>
+            <div class="question-layer"></div>
+            <label class="prompt-question"> University </label>
+            <input type="text" placeholder="University" id="University-input" autofocus>
+            <div class="buttons">
+                <button class="skip-btn" id="skip-btn-7" onclick="progressBarDisplay()"> SKIP </button>
+                <button class="next-btn" id="next-btn-7" onclick="progressBarDisplay(), nextBtnPress(10,8)"> NEXT </button>
+            </div>
+        </div>
+        <br>
+    </div>
+    <div class="progress-bar-outline">
+        <label id="progress-label">
+            Progress:
+            <label id="progress-value"></label>
+        </label>
+        <progress id="progress-bar" value="0" max="100"></progress>
+    </div>
+    <br>
+    <div id="output-step1">
+        <!--Output goes here-->
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
