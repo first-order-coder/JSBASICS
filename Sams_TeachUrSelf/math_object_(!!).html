@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log(Math.ceil(18.1))
+        console.log(Math.floor(18.8))
+        console.log(Math.round(18.3))
+        console.log(Math.round(18.5))
+        console.log(Math.random())
+
+        let total = 0;
+        for (let i=0; i < 5000; i++){
+            let randomNum = Math.random()
+            total += randomNum
+
+            if (i%1000 === 0){
+                document.write(i + " has passed" + "<br>")
+            }
+        }
+        let average = total / 5000
+        console.log(Math.round(average * 10000) / 10000)
+
+        birthday = new Date(); //will get the current date and time
+        birthday.setDate(21)
+        console.log(birthday.getHours()) // will get the hours
+        console.log(birthday.getFullYear()) 
+        if(birthday.getMinutes() === 24){
+            alert('Rat')
+        }
+        console.log(birthday) 
+        
+        // using shorthand expressions
+        let a = 110;
+        console.log( value = (a==110) ? 11:0); // if (a==1) --> output is value = 11 and else --> output 0
+
+        // if the entered value is 4 then alert will take outValue to be string 'Wow'
+        // let valueIn = prompt('Enter');
+        let outValue = (valueIn == 4) ? 'Wow':'No';
+        alert(outValue)
+
+        // variable = (condition) ? (value if true) : (value if false)
+
+    </script>
+    
+</body>
+</html>

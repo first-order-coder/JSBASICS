@@ -32,10 +32,10 @@
         // to create many objects of the same type, we use
         //-->> object constructor function.
         function Person(first, last, age, eye){
-            this.firstName = first; // this keyword refers to the current object.
-            this.lastName = last;
-            this.age = age;
-            this.eyeColor = eye;
+            this.FirstName = first; // this keyword refers to the current object.
+            this.LastName = last;
+            this.Age = age;
+            this.EyeColor = eye;
         }
         
         // in this way we can create many objects with the same type
@@ -45,7 +45,7 @@
         const myMother = new Person("Sally", "Rally", 48, "green");
         const mySister = new Person("Anna", "Rally", 18, "green");
         const mySelf = new Person("Johnny", "Rally", 22, "green");
-        console.log(myFather)
+        console.log(myFather,myMother)
 
         
         

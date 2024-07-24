@@ -168,3 +168,31 @@ Day_16:
 			this.firstProperty = property_1,
 			this.secondProperty = property_2
 		}
+Day_17:
+>> Math object:
+	>> Math.ceil(18.2) will round up this number up to the next integer --> 19
+		>> rounding up to the next integer upper value
+	>> Math.floor(18.9) will round down this number to lower integer --> 18
+		>> round down to the lower value
+	>> Math.round(18.5) will round to nearest integer --> 19
+		>> Math.round(18.3) --> 18
+	>> to generate random numbers between 0 and 1
+		>> Math.random()
+>> Date object:
+	>> birthday = new Date(); --> will get the current date and time
+	>> can use "set" methods to set
+		>> birthday.setDate()
+		>> birthday.setMonth()
+		>> birthday.setFullYear()
+		>> birthday.setTime()
+		>> birthday.setHours(), setMinutes(), setSeconds()
+	>> can use "get" methods to get
+		>> birthday.getDate()
+		>> birthday.getMonth()
+		>> birthday.getFullYear()
+>> The "==" in a condition means is equal to and the "===" means is equal to both in value and type.
+>> can use logical operators as well.
+	>> if ((phone == "") || (email == "")) alert ("sumting wong") --> or operator
+	>> if ((phone == "") && (email == "")) alert ("ho lee fuk") --> and operator
+
+>> 
