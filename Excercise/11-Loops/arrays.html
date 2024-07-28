@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Loops</title>
+</head>
+<body>
+    <script>
+        //arrays are zero indexed
+        let array_1 = ['hello','world', 'search', 'good','search']
+        if(array_1.includes('search')){
+            for (let i=0; i<array_1.length; i++){
+            console.log(array_1.indexOf('search'));//will give the first appearance of index of the word we looking for
+            }
+        }
+        else{
+            //let outVal = array_1[-1]; //javascript doesn't have negative indexing feature
+
+            console.log(array_1[1]);
+        }
+        
+        // find the index of the given word inside the array
+        function findIndex(array, word){
+            if(array.includes(word)){
+                console.log(array.indexOf(word))
+            }
+            else{
+                console.log(array[1])
+            }
+        }
+
+        findIndex(['green','blue','red','green'], 'green')
+
+        //take the foods array and check if the item egg is in there if it is skip them and put the other items in the result array.
+        let result = [];
+        function removeEgg(foods){
+            for(let i=0; i<foods.length; i++){
+                if(foods[i] === 'egg'){
+                    continue
+                }
+                result.push(foods[i])
+            }
+            return result
+        }
+
+        console.log(removeEgg(['egg','apple','egg','egg','egg','ham']))
+
+        //take the first two eggs and remove them only
+        let result_1 = [];
+        let count = 0;
+        function removeEgg_2(foods_2){
+            //.reverse() use reverse() method to reverse the order of the values in the array 
+            //--> dont need reverse to get the last two eggs just reverse the for loops iteration 😂😂
+
+            for(let i=foods_2.length; i>0; i--){
+                if(foods_2[i] === 'egg'){
+                    count += 1;
+                    foods_2.splice(i,1) //remove one item with the index of i 
+                    if(count === 2){
+                        break
+                    }
+                }
+            }
+            return foods_2
+            
+            // return foods_2.splice(4,2) // will remove items indexed as 4 and 5 from the list
+        }
+        console.log(removeEgg_2(['egg','apple','egg','egg','ham']))
+
+        // //in for loop the condition is checked before every iteration
+        // for(let i=10; i<5; i--){
+        //     console.log(i)
+        // } ---> therefore this code wont work i<5 is always false and wont be met.
+
+    </script>
+</body>
+</html>

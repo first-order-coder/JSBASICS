@@ -164,7 +164,7 @@ Day_16:
 	>> const obect_name = new Object()
 >> to create an object using object constructor function
 	>> function Objectname(property_1, proeperty_2, property_3)
-		{       *have to use this keyword to make sure we are selecting this objcet
+		{       *have to use "this" keyword to make sure we are selecting this objcet
 			this.firstProperty = property_1,
 			this.secondProperty = property_2
 		}
@@ -195,4 +195,7 @@ Day_17:
 	>> if ((phone == "") || (email == "")) alert ("sumting wong") --> or operator
 	>> if ((phone == "") && (email == "")) alert ("ho lee fuk") --> and operator
 
->> 
+Day_18:
+>> we can use "break" to get out of a loop, once break is executed the rest of the loop is skipped and,
+first line after the loop is then executed.
+>> "continue" skips the part of the loop but will continue with the rest.

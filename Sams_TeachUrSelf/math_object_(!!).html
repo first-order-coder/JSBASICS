@@ -40,10 +40,28 @@
 
         // if the entered value is 4 then alert will take outValue to be string 'Wow'
         // let valueIn = prompt('Enter');
-        let outValue = (valueIn == 4) ? 'Wow':'No';
-        alert(outValue)
+        // let outValue = (valueIn == 4) ? 'Wow':'No';
+        // alert(outValue)
 
         // variable = (condition) ? (value if true) : (value if false)
+
+        // using prompt in a loop
+        // for(let i=0; i< names.length; i++){
+        //     let name = prompt('Enter Name')
+        //     names.push(name)
+        //     console.log(names)
+        // }
+
+        let names = [];
+        while (true) {
+            let name = prompt('Enter Name');
+            if (name === null) { //if the value inside prompt is zero then it will break.
+                break;
+            }
+            names.push(name);
+            console.log(names);
+        }
+
 
     </script>
     
