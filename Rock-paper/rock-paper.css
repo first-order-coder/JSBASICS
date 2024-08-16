@@ -1,0 +1,63 @@
+body{
+    background-color: black;
+}
+#title{
+    color: white;
+    font-size: 50px;
+    margin-top: 5px;
+}
+#rock-image{
+    border: solid;
+    border-radius: 100px;
+    background-color: transparent;
+}
+.rock-btn{
+    background-color: transparent;
+    border: solid;
+    border-radius:100px;
+    cursor: pointer;
+}
+.paper-btn{
+    background-color: transparent;
+    border: solid;
+    border-radius:100px;
+    cursor: pointer;
+}
+.scissor-btn{
+    background-color: transparent;
+    border: solid;
+    border-radius:100px;
+    cursor: pointer;
+}
+#paper-image{
+    background-color: transparent;
+    border: solid;
+    border-radius:100px;
+}
+#scissor-image{
+    background-color: transparent;
+    border: solid;
+    border-radius:100px;
+}
+.results{
+    color: white;
+    margin-top: 40px;
+    font-size: x-large;
+}
+.chosen-move{
+    color: white;
+    margin-top: 40px;
+    font-size: x-large;
+}
+#computer-choice{
+    margin-left: 20px;
+}
+#result{
+    margin-left: 20px;
+}
+#loss-result{
+    margin-left: 20px;
+}
+#tie-result{
+    margin-left: 20px;
+}

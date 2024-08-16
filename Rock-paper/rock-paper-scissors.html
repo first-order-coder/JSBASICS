@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="rock-paper.css" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <p id="title">Rock Paper Scissor</p>
+    </div>
+    <div class="buttons">
+        <button class="rock-btn" onclick="playerMoveRock('Rock')">
+            <img id="rock-image" src="img\rock.png" width="150px" height="150px">
+        </button>
+        <button class="paper-btn" onclick="playerMovePaper('Paper')">
+            <img id="paper-image" src="img\paper.png" width="150px" height="150px">
+        </button>
+        <button class="scissor-btn" onclick="playerMoveScissor('Scissor')">
+            <img id="scissor-image" src="img\scissor.png" width="150px" height="150px">
+        </button>
+    </div>
+    <br>
+    <div class="chosen-move">
+        <label id="your-choice">You Chose: </label>
+        <label id="computer-choice">Computer Chose: </label>
+        <label id="result">Result: </label>
+    </div>
+    <br>
+    <div class="results">
+        <label id="win-result">Wins: 0</label>
+        <label id="loss-result">Losses: 0</label>
+        <label id="tie-result">Ties: 0</label>
+    </div>
+
+
+    <script src="rock-paper.js"></script>
+</body>
+</html>

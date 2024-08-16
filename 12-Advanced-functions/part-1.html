@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="search" autofill="true">
+    <script>
+        setTimeout(function greeting(){
+            console.log('hello')
+        }, 9000)
+
+        let time = new Date() // without new keyword this would raise an error, its used to create an instance of the Date() object.
+        let secs = time.getSeconds()
+
+        for(let i=0; i< 60; i++){
+            console.log(secs)
+        }
+    </script>
+</body>
+</html>
