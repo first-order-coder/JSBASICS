@@ -215,3 +215,7 @@ Day_19:
 	>> useful for making links conditional or displaying a disclaimer before leaving the current page.
 
 >> Event is an action performed by the user and Event Handling is writing a code to respond to the user actions.
+	>> event listener listens out for the event happening.
+
+Day_20:
+>>
