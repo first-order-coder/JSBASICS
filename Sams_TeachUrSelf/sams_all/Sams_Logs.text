@@ -199,3 +199,19 @@ Day_18:
 >> we can use "break" to get out of a loop, once break is executed the rest of the loop is skipped and,
 first line after the loop is then executed.
 >> "continue" skips the part of the loop but will continue with the rest.
+
+Day_19:
+>> use functions to perform multiple statements.
+>> By defining event handlers separately we can keep the html code much clearer.
+>> Possible Error ==> if we put script tag before the other elements inside body element then 
+	>> the <script> would run first and then other elements will be executed	
+	>> will give error of undefined object.
+
+>> <a href="http://www.google.com/" onclick="return(window.confirm('Are u Sure?'))">
+       Go Away
+   </a>
+	>> will go the link depending on the answer of user yes or no will return false if no and the following of link will be stopped.
+	>> this is possible because click event invokes return() part before the linked page is loaded in to the browser.
+	>> useful for making links conditional or displaying a disclaimer before leaving the current page.
+
+>> Event is an action performed by the user and Event Handling is writing a code to respond to the user actions.

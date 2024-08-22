@@ -27,9 +27,12 @@ let youChoseElm = document.querySelector('#your-choice')
 let computerChoseElm = document.querySelector('#computer-choice')
 
 function chosenResult(playerMove){
-    let htmlImage = '<img id="rock-image" src="img\rock.png" width="150px" height="150px">'
-    youChoseElm.innerHTML = `You Chose: ${htmlImage}`;
-    computerChoseElm.innerText = `Computer Chose: ${computerMove}`;
+    let youchoseImage = `<img id="${playerMove.toLowerCase()}-image" src="img/${playerMove.toLowerCase()}.png" width="80px" height="80px">`;
+    youChoseElm.innerHTML = `You Chose: ${youchoseImage}`;
+
+    let computerChoseImage = `<img id="${computerMove.toLowerCase()}-image" src="img/${computerMove.toLowerCase()}.png" width="80px" height="80px">`;
+    
+    computerChoseElm.innerHTML = `Computer Chose: ${computerChoseImage}`;
 }
 
 function playerMoveRock(playerMove){
@@ -93,9 +96,12 @@ function playerMoveScissor(playerMove){
 let winElm = document.querySelector('#win-result')
 let lossElm = document.querySelector('#loss-result')
 let tieElm = document.querySelector('#tie-result')
+let resultElm = document.querySelector('#result')
 
 function updateResult(){
     winElm.innerText = `Wins:${score.win}`;
     lossElm.innerText = `Losses:${score.loss}`;
     tieElm.innerText = `Ties:${score.tie}`;
+    
+    resultElm.innerText = `Result:`
 }
