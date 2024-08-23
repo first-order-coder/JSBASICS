@@ -1,0 +1,225 @@
+Chapters Done:
+01,02,03,04,05,06,07
+
+
+Day_01
+>> To open the file using powershell type "ii filenmae.text"
+>> <a> </a> the 'a' stands for word anchor
+	>> <a> has a attribute href=""
+>> To make a button press to go to a link place it as 
+	<a href="link"> <button>GO TO</button> </a> 
+>> <a href="mailto:youremail@domain.com"> This will link to your mail address </a> 
+>> <hr> to create a horizontal line
+>> <h1> To create a Heading </h1>
+>> To get a YT video on to the web page	
+	>>Share--> Embed --> copy the code and paste it
+	>> But if the owners of the video havent given the allow embedded video option then it cant be used
+>> This code will make sure that webpage will fit into all the devices without a problem	
+	<meta charset="UTF-8">
+     	<meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+
+Day_02
+>>FrontEnd
+	>> React.js
+	>> Node.js
+	>> Tailwind css
+	>> daisyui
+
+>>Backend 
+	>> Next js API
+	>> MongoDB
+	>> Mailgun
+	>> Stripe
+
+Day_03:
+>> JS INTRO
+	>>var currentTime = new Date();
+	>> document.write(currentTime);
+		>> send output as part of the web document.
+	>> To break a line inside <script> tag --> ("<br>"+variable_name)
+	>> can use separate javascript files so that html file would not look very confusing.
+		>> include <script src="filename.js"></script>
+	>> To get a input field in the HTML
+		>> <input id="id_to_call_text" type="text">
+	>> to get the current time we can use now = new Date();
+		>> now.getHours()
+		>> now.getMinutes()
+		>> now.getSeconds() 
+
+Day_04:
+>> JS INTRO
+	>> Objects
+	 >> document.write (write method of object document)
+	 >> Data stored in a object is called property
+	 >> to call a object property/properties ObjectName.PropertyName -> (Bob.phone_num)
+	 >> objects can include methods. 
+		>> method is a function inside an object
+		>> document.write() write is a (function saved inside the object document) and its called a method.
+       >> we use conditionals as event handlers --> what to do if something comes up.
+       >> for(executed(one_time)_before_execution_of_code_block,
+		conditon_for_executing, executed_after_everytime_code_block_has_been_executed)  
+	>>for(i=0;i<=10;i++){code_block}
+	>>Example of event handler
+		>> <button onmouseover="alert('on button')">SEND MAIL</button>
+		>> onclick="" is also an example of evnt handler	
+		>> when mouse is over the button an alert will be triggered.
+		>> with (onmouseover) event handler we could count how many times a person will point 
+		   at a certain object on web page.
+
+Day_05:
+>> Using separate .JS files --> advantage ==> can link to same .js file from two or more html documents.
+	>> because the browser stores this file in its cache, the time it takes to load webpage will be reduced.
+
+Day_06:
+>> to set a time out --> setTimeout(function_need_to_run, time_in_miliseconds)
+>> to set a time limit and recursive event --> setInterval(function_need_to_run, time_in_miliseconds)
+
+Day_07:
+>> parseInt("30 days of JS") will return the interger in the string which is --> '30'
+>> stringTest.substring(0,5) --> return the strings characters indexing from 0 to 5 excluding 5.
+>> string indexing starts from 0.
+>> stringTest.charArt(0) --> return first character or 0th indexed character.
+>> spaces are counted and taken as a index too
+>> stringTest.indexOf('world',10) show the index of the word world after index 10 which is first occurence
+>> stringTest.lastIndexOf("world") give occurence of the last 
+>> to create an array --> scores = [1,3,3,45,55]
+>> string.split(seperator:string) --> will separate the string.
+	>> names.split(" ")
+>> string.join(joiners:string) --> will join the separated parts.
+	>> parts.join(" ** ") --> will be joined by ** in the middle
+>> sortedNames = names.sort() --> will sort out arrays.
+ 
+Day_08:
+>> history, document, navigator, location are all children of the window object.
+	>> history.go(-2) --> like clicking the back button twice.
+	>> history.back() == history.go(-1)
+	>> history.forward()
+>> location object stores info about current url loaded in the browser window.
+	>> location.protocol --> https
+	>> location.hostname --> www.google.com
+	>> location.port --> 80 (port number of the URL)
+
+Day_09:
+>> we can use <div> element to create a group of objects that can be controlled together.
+	>> its a container element.
+>> we can use id name and class name attributes to be used to do styles separately.
+	>> when using id  name --> <style> #id_name {} </style>
+	>> when using class name --> <style> .class_name {} </style>
+	>> but id name must only be used by one HTML element
+	>> class name can be used by sevaral elements
+>> position: fixed; 
+	>> is positioned relative to the viewport, means it always stays in the same place even if the page is scrolled.
+>> when in positions top bottom right and left, the distance is calculated from the end of the
+webpages edges.
+ 	>> left: 100px; right: 100px; top: 1800px; 100px from the left edge of the website and 1800px from the top edge of the webpage.
+
+Day_13:
+>> To get the actual width of an element we have to take calculations of the margin + border + padding.
+	>> padding is the space between an element's border and the element's content.
+>> 2 main styles for display style property --> 'block' and 'inline'
+	>> block elements placed automatically on a new raw <p>, <div>
+	>> inline elements placed on the same raw 
+>> To control the way things stack up --> "z-index:0", on top of each other
+	>> front, backward or on front or on back
+	>> higher the z-index is element will be shown on top and lower z-index will appear under higher ones.
+	>> z-index:0, z-index:1, z-index:2, z-index:3
+	>> z-index style can affect any HTML content including images.
+>> using float
+	>> img {
+		 float:right 	--> image should float to the right in a text
+	       }
+>> when we use <div> to create a container we can move all the elements inside of it together.
+>> border:10px solid; must give if it is solid or not otherwise it wont appear.
+>> to access style property using DOM 
+	>> paraElm = document.getElementById("div_id_you_chose")
+	>> paraElm.style.backgroundColor = "lightblue"; OR
+	>> the best way ----> window.getComputedStyle(paraElm).left
+ 		>> this will get the current left position of the element
+ 
+>> to hide a element we can use paraElm.
+	>> style.display = "block";
+	>> style.display = "none";
+
+Day_14;
+>> to get the basic layoout type --> html:5 and TAB
+>> to open a div container with class --> .class_name and TAB'
+>> we can use onkeydown="pressEnter(event)" in input fields.
+>> getComputedStyle will return all the css style proeperties in the element.
+>> to add a new line with javascript 
+	>> `${sentenceElement.innerText}\n` use \n inside a string
+>>to separate the css
+	>> use <link href="main.css"; rel="stylesheet"> must be written in order to work 
+
+>> Day_15:
+>> to get the CSS on javascript
+	>> let subBtnElement = document.querySelector('.class-subtBtn') 
+	>> window.getComputedStyle(subBtnElement).borderRadius
+
+Day_16:
+>> To convert string to a interger number --> parseInt()
+>> To convert string to a floating-point number --> parseFloat() 
+>> To split a string --> string.split(" ")
+>> to create an object
+	>> const obect_name = new Object()
+>> to create an object using object constructor function
+	>> function Objectname(property_1, proeperty_2, property_3)
+		{       *have to use "this" keyword to make sure we are selecting this objcet
+			this.firstProperty = property_1,
+			this.secondProperty = property_2
+		}
+Day_17:
+>> Math object:
+	>> Math.ceil(18.2) will round up this number up to the next integer --> 19
+		>> rounding up to the next integer upper value
+	>> Math.floor(18.9) will round down this number to lower integer --> 18
+		>> round down to the lower value
+	>> Math.round(18.5) will round to nearest integer --> 19
+		>> Math.round(18.3) --> 18
+	>> to generate random numbers between 0 and 1
+		>> Math.random()
+>> Date object:
+	>> birthday = new Date(); --> will get the current date and time
+	>> can use "set" methods to set
+		>> birthday.setDate()
+		>> birthday.setMonth()
+		>> birthday.setFullYear()
+		>> birthday.setTime()
+		>> birthday.setHours(), setMinutes(), setSeconds()
+	>> can use "get" methods to get
+		>> birthday.getDate()
+		>> birthday.getMonth()
+		>> birthday.getFullYear()
+>> The "==" in a condition means is equal to and the "===" means is equal to both in value and type.
+>> can use logical operators as well.
+	>> if ((phone == "") || (email == "")) alert ("sumting wong") --> or operator
+	>> if ((phone == "") && (email == "")) alert ("ho lee fuk") --> and operator
+
+Day_18:
+>> we can use "break" to get out of a loop, once break is executed the rest of the loop is skipped and,
+first line after the loop is then executed.
+>> "continue" skips the part of the loop but will continue with the rest.
+
+Day_19:
+>> use functions to perform multiple statements.
+>> By defining event handlers separately we can keep the html code much clearer.
+>> Possible Error ==> if we put script tag before the other elements inside body element then 
+	>> the <script> would run first and then other elements will be executed	
+	>> will give error of undefined object.
+
+>> <a href="http://www.google.com/" onclick="return(window.confirm('Are u Sure?'))">
+       Go Away
+   </a>
+	>> will go the link depending on the answer of user yes or no will return false if no and the following of link will be stopped.
+	>> this is possible because click event invokes return() part before the linked page is loaded in to the browser.
+	>> useful for making links conditional or displaying a disclaimer before leaving the current page.
+
+>> Event is an action performed by the user and Event Handling is writing a code to respond to the user actions.
+	>> event listener listens out for the event happening.
+
+Day_20:
+>> we can use load event --> this occurs when current page finishes loading from the server including all of its images
+	>> window.onload = MyFunction;
+>> console.log(window.performance)
+	>> in this we can find differnt timings we can use to calculate
+	>> performance.timing.loaEventStart - performance.timing.navigationStart will give the page load time

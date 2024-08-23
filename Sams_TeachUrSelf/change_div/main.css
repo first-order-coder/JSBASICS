@@ -1,0 +1,30 @@
+#ima-1{
+    height: 300px;
+    width: 500px;
+    float: left;
+    margin: 7px;
+    position: relative;
+    top: -5px;
+}
+.text-1{
+    font-size: 17px;
+}
+#para-1{
+    font-size: xx-large;
+    font-weight: bolder;
+}
+#show-specs{
+    position: absolute;
+    bottom: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    color: rgb(188, 156, 156);
+    font-weight:bold;
+}
+#specs-shown{
+    display: none;
+    position: absolute;
+    left: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}

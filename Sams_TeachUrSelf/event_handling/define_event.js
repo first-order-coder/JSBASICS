@@ -27,3 +27,12 @@ function divFunc(event){
 divElm.onkeydown = divFunc; //the div element is not really focusable so we need to write something first before so we can focus on first
 // divElm.onkeydown = divFunc;
 
+function MyFunction(){
+    console.log('We are loaded')
+    console.log(window.performance)
+    var loadTime = performance.timing.loadEventStart - performance.timing.navigationStart 
+    console.log(loadTime/1000)
+}
+window.onload = MyFunction;
+
+
