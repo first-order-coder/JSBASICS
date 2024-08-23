@@ -1,5 +1,5 @@
 Chapters Done:
-01,02,03,04,05,06,07
+01,02,03,04,05,06,07,08,09
 
 
 Day_01
@@ -223,3 +223,7 @@ Day_20:
 >> console.log(window.performance)
 	>> in this we can find differnt timings we can use to calculate
 	>> performance.timing.loaEventStart - performance.timing.navigationStart will give the page load time
+
+Day_21:
+>> we can use documentElm.style.fontWeight to change the boldness of the font.
+>> also can use document.style.textDecoration to create an underline in the text.
