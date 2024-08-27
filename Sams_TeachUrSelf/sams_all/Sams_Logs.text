@@ -227,3 +227,6 @@ Day_20:
 Day_21:
 >> we can use documentElm.style.fontWeight to change the boldness of the font.
 >> also can use document.style.textDecoration to create an underline in the text.
+
+Day_22:
+>> to change the opacity --> opacity:0.5; the values are between 0 and 1.	
