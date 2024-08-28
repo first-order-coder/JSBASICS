@@ -105,3 +105,30 @@ function updateResult(){
     
     resultElm.innerText = `Result:`
 }
+
+let autoplayFunc = () => {
+    let randomPlayerValue = Math.random();
+    let playerMove = '';
+    if(randomPlayerValue <=0.33){
+        playerMove = 'Rock';
+        playerMoveRock(playerMove);
+    }
+    else if(0.3 < randomPlayerValue && randomPlayerValue <= 0.7){
+        playerMove = 'Paper';
+        playerMovePaper(playerMove);
+    }
+    else{
+        playerMove = 'Scissor';
+        playerMoveScissor(playerMove);
+    }
+}
+
+let autoplaybtnElm = document.querySelector("#autoplay-btn");
+autoplaybtnElm.onclick = () => {
+    autoplyaIntervalId = setInterval(autoplayFunc, 1000);
+};
+
+let stopautoplaybtnElm = document.querySelector("#stopautoplay-btn");
+stopautoplaybtnElm.onclick = () => {
+    clearInterval(autoplyaIntervalId);
+};

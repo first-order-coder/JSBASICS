@@ -61,3 +61,19 @@ body{
 #tie-result{
     margin-left: 20px;
 }
+#autoplay-btn{
+    background-color: rgb(71, 100, 28);
+    font-size:x-large;
+    border: solid 1px white;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+#stopautoplay-btn{
+    background-color: rgb(71, 100, 28);
+    font-size:x-large;
+    border: solid 1px white;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
