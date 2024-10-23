@@ -1,7 +1,7 @@
 let inputElm = document.querySelector('#input-elm')
 let submitBtnElm = document.querySelector('#submit-btn')
 
-const morseCode = { 'A': '.-', 'B':'-...',
+const morseCode = { A : '.-', 'B':'-...',
     'C':'-.-.', 'D':'-..', 'E':'.',
     'F':'..-.', 'G':'--.', 'H':'....',
     'I':'..', 'J':'.---', 'K':'-.-',
@@ -17,16 +17,21 @@ const morseCode = { 'A': '.-', 'B':'-...',
     '?':'..--..', '/':'-..-.', '-':'-....-',
     '(':'-.--.', ')':'-.--.-'}
 
-let submitInput = () => {
-    let inputVal = inputElm.value;
-    console.log(morseCode.Y)
-    console.log(inputVal)
-    // conditionLogic();
+let submitInput = (event) => {
+    // console.log(morseCode.inputVal)
+    if (event.key === "Enter") {
+        let inputVal = inputElm.value;
+        if(inputVal){
+            submitBtnElm.onclick = submitInput;
+            console.log(inputVal);
+            inputElm.value = '';
+        } 
+    }
 }
+inputElm.addEventListener('keydown',submitInput);
 
-submitBtnElm.onclick = submitInput;
+let submitBtnFunc = () => {
 
-let conditionLogic = () => {
 }
 
 
