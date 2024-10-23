@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="start-btn" style="background-color: greenyellow; font-size: x-large; border-radius: 5px; cursor: pointer;">
+        START
+    </button>
+    <br>
+    <br>
+    <div id="main">
+        <button id="add-to-cart-btn" style="background-color: yellow; border: solid 1px black; border-radius: 10px; font-size: x-large; cursor:pointer">
+            ADD TO CART
+        </button>
+        <div id="description" style="float: inline; display: none; font-size: large; position: absolute; left: 200px;top: 65px;">
+            Added!
+        </div>
+    </div>
+    <br>
+    <div id="change-title">
+        <button id="add-btn">
+            ADD
+        </button>
+        <button id="remove-btn">
+            REMOVE
+        </button>
+    </div>
+    <script>
+        let startBtnElm = document.querySelector("#start-btn")
+        let loadingFunc = () => {
+            startBtnElm.innerText = "Loading";
+            let timeoutInterval = setTimeout(finishedFunc, 4000);
+        }
+        let finishedFunc = () => {
+            startBtnElm.innerText = "Finished!";
+
+        }
+        startBtnElm.onclick = loadingFunc;
+
+        let addtocartElm = document.querySelector("#add-to-cart-btn")
+        let descriptionElm = document.querySelector("#description")
+        let addtocartFunc = () => {
+            descriptionElm.style.display = "block";
+            let timeoutId = setTimeout(vanishFunc, 2000)
+        }
+        let vanishFunc = () => {
+            descriptionElm.style.display = "none";
+        }
+
+        addtocartElm.onclick = addtocartFunc;
+
+        let addbtnElm = document.querySelector("#add-btn")
+        let removebtnElm = document.querySelector("#remove-btn")
+
+        let titleVal = 0;
+        let addbtnFunc = () => {
+            titleVal += 1;
+            document.title = `(${titleVal}) New messages`
+        }
+        
+        let removebtnFunc = () => {
+            if (titleVal > 0){
+                titleVal -= 1;
+            }
+            if(titleVal > 0){
+                document.title = `(${titleVal}) New messages`;
+
+            }
+            else if(titleVal === 0){
+                document.title = 'App';
+            }
+        }
+        addbtnElm.onclick = addbtnFunc;
+        removebtnElm.onclick = removebtnFunc;
+
+        
+    </script>
+</body>
+</html>

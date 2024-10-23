@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #ima-1{
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <input type="search" autofill="true">
+    <img src="1.jpg" id="ima-1" width="300px" height="500px">
     <script>
         setTimeout(function greeting(){
             console.log('hello')
@@ -15,9 +21,37 @@
         let time = new Date() // without new keyword this would raise an error, its used to create an instance of the Date() object.
         let secs = time.getSeconds()
 
-        for(let i=0; i< 60; i++){
-            console.log(secs)
+        function secondGen(){
+            if(secs < 60){
+                console.log(secs);
+                secs ++;
+
+            }else{
+                secs = 0;
+            }
         }
+        // setInterval(secondGen, 1000);
+    
+        // looping through array using forEachq
+        [
+            'read books',
+            'think alone',
+            'dedicated mind'
+        ].forEach(function(value, index, string){
+            console.log(value)
+            console.log(index) //this function is a callback function
+        })
+
+        let imaElm = document.querySelector("#ima-1")
+        function displayImg(){
+            if(imaElm.style.display == "none"){
+            imaElm.style.display = "block";
+            }else{
+                imaElm.style.display = "none";
+            }
+        }
+        // setInterval(displayImg, 400)
+    
     </script>
-</body>
+    </body>
 </html>
