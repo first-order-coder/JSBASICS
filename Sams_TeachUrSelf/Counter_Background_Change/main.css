@@ -1,0 +1,36 @@
+#topic-1{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 90px;
+    position: absolute;
+    left: 750px;   
+    top: 200px;
+}
+#count-btn{
+    font-size: 30px;
+    position: absolute;
+    left: 800px;   
+    top: 500px;
+    border: solid 1px;
+    border-radius: 10px;
+    cursor:pointer;
+}
+#reset-btn{
+    font-size: 30px;
+    position: absolute;
+    left: 950px;   
+    top: 500px;
+    border: solid 1px;
+    border-radius: 10px;
+    cursor:pointer;
+}
+#count-para{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 40px;
+    position: absolute;
+    left: 850px;   
+    top: 380px;
+}
+.body{
+    background-color:rgba(35, 99, 57, 0.881);
+}
