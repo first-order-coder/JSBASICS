@@ -2,6 +2,8 @@ let countBtnElm = document.querySelector("#count-btn")
 let resetBtnElm = document.querySelector("#reset-btn")
 let countParaElm = document.querySelector("#count-para")
 let backgroundElm = document.querySelector(".body")
+let flashBtnElm = document.querySelector("#flash-btn")
+let stopFlashBtnElm = document.querySelector("#stop-flash-btn")
 let colorArray = ["green", "blue", "red", "yellow", "teal", "orange"]
 let count = 0;
 
@@ -26,3 +28,22 @@ let resetCount = () => {
     countParaElm.innerText = `COUNT:${count}`;
 }
 resetBtnElm.onmousedown = resetCount;
+
+// let colorCount = 0;
+let flashColor = () => {
+    let colorCount = (Math.random()) * 256;  
+    let colorCount2 = (Math.random()) * 256;
+    let colorCount3 = (Math.random()) * 256;
+    backgroundElm.style.backgroundColor = `rgb(${colorCount2}, ${colorCount3}, ${colorCount})`;
+    console.log(colorCount2)
+}
+
+let autoPlay = () => {
+    autoPlayIntervalID = setInterval(flashColor, 500); // good tool to use to execute in given intervals
+}
+flashBtnElm.onmousedown = autoPlay;
+
+let stopAutoPlay = () => {
+    clearInterval(autoPlayIntervalID)
+}
+stopFlashBtnElm.onmousedown = stopAutoPlay;
