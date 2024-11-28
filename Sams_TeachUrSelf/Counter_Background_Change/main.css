@@ -5,6 +5,7 @@
     position: absolute;
     left: 750px;   
     top: 200px;
+    flex-wrap: wrap;
 }
 #count-btn{
     font-size: 30px;

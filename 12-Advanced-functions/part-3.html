@@ -10,9 +10,21 @@
     
     <script>
         let btnElement = document.querySelector(".js-btn");
-        btnElement.addEventListener('keydown', (event) => {
-            console.log(event.keya)
-        });
+
+        let mousedownFunc = (event) => {
+            console.log("button pressed")
+            event.target.style.backgroundColor = 'red'; //event.target will point to the html element which triggered the event listener
+        }
+        btnElement.addEventListener('mousedown',mousedownFunc); //when a user press dblclick the function will run.
+
+        btnElement.removeEventListener('mousedown', mousedownFunc) // parameters: which fuunction to remove and which event associated to remove as well.
+        let doubleClk = () => {
+            event.target.style.height = '100px';
+        }
+
+        // better to use event listener instead of onmouseclick onmousedown, onmouseover etc.
+        btnElement.addEventListener('dblclick', doubleClk)
+        
     </script>
 </body>
 </html>

@@ -21,13 +21,14 @@ let colorChange = (count) => {
                                                 // we get yellow when count is 15, this way we can make sure that the colorArray stays in range with the count.
     backgroundElm.style.backgroundColor = colorArray[colorIndex]; //
 }
-countBtnElm.onmousedown = countUp;
+countBtnElm.addEventListener('mousedown', countUp)
 
 let resetCount = () => {
     count = 0;
     countParaElm.innerText = `COUNT:${count}`;
+    backgroundElm.style.backgroundColor = 'rgba(35, 99, 57, 0.881)'
 }
-resetBtnElm.onmousedown = resetCount;
+resetBtnElm.addEventListener('mousedown', resetCount)
 
 // let colorCount = 0;
 let flashColor = () => {
@@ -41,9 +42,11 @@ let flashColor = () => {
 let autoPlay = () => {
     autoPlayIntervalID = setInterval(flashColor, 500); // good tool to use to execute in given intervals
 }
-flashBtnElm.onmousedown = autoPlay;
+flashBtnElm.addEventListener('mousedown', autoPlay);
 
 let stopAutoPlay = () => {
     clearInterval(autoPlayIntervalID)
 }
-stopFlashBtnElm.onmousedown = stopAutoPlay;
+stopFlashBtnElm.addEventListener('mousedown',stopAutoPlay);
+
+//
