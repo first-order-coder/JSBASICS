@@ -1,0 +1,45 @@
+#tile-1{
+    background-color: black;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 10px;
+    padding: none;
+}
+#tile-2{
+    background-color: black;
+    position: absolute;
+    left:115px;
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 10px;
+}
+#tile-3{
+    background-color: black;
+    position: absolute;
+    left: 220px;
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 10px;
+}
+#tile-4{
+    background-color: black;
+    position: absolute;
+    left: 325px;
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 10px;
+}
+#tile-5{
+    background-color: black;
+    position: absolute;
+    left: 430px;
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 10px;
+}
