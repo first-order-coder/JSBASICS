@@ -39,6 +39,15 @@ let flashColor = () => {
     console.log(colorCount2)
 }
 
+document.body.addEventListener('keydown', flashColor) // background will now change accoring to key strokes totally random
+
+// with the code below the counter will increase when right arrow key is pressed.
+document.body.addEventListener('keydown', (event) => {
+    if (event.key === "ArrowRight") {
+        countUp();
+    }
+}) 
+
 let autoPlay = () => {
     autoPlayIntervalID = setInterval(flashColor, 500); // good tool to use to execute in given intervals
 }

@@ -52,4 +52,5 @@
 }
 .body{
     background-color:rgba(35, 99, 57, 0.881);
+    transition: background-color 0.8s ease;
 }
